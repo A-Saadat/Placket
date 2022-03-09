@@ -1,0 +1,61 @@
+
+.card__container{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.property__card{
+    max-width: 280px;
+
+    svg{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+.color1{
+    color: #3e1f47;
+}
+
+.color2{
+    color: #1b3a4b;
+}
+
+.color3{
+    color: #4a4e69;
+}
+
+.card__body{
+
+    h3{
+        font-family: lalezar;
+        text-align: center;
+    }
+
+    p{
+        font-family: vazir;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    
+}
+
+
+
+@media(max-width: 950px){
+    .card__container{
+        gap: 5rem;
+    }
+}
+
+@media(max-width: 650px){
+    .card__container{
+        gap: 2rem;
+    }
+}

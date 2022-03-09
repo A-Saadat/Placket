@@ -1,0 +1,40 @@
+.intro {
+  margin-top: 460px;
+}
+
+.intro img {
+  width: 50vw;
+  border-radius: 150px 50px;
+  -webkit-border-radius: 150px 50px;
+  -moz-border-radius: 150px 50px;
+  -ms-border-radius: 150px 50px;
+  -o-border-radius: 150px 50px;
+  -webkit-filter: blur(0.4px) contrast(1.2);
+          filter: blur(0.4px) contrast(1.2);
+}
+
+.border {
+  margin: auto;
+  border: 0 !important;
+}
+
+.intro__img {
+  margin-right: 1.5rem;
+}
+
+.intro__text {
+  margin-left: 1.5rem;
+  text-align: center;
+}
+
+.intro__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=main.css.map */
