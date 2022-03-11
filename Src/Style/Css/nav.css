@@ -1,0 +1,28 @@
+nav{
+    border-bottom: 1px solid #bfc5cd;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.nav-menu{
+    transform: translateY(-3px);
+}
+
+.nav-brand img{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.nav-button{
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #3c4859;
+    border: 1px solid #bfc5cd;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
