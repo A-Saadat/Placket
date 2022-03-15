@@ -593,23 +593,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 40px;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.bg-\[\#F6F2F1\] {
+.bg-\[\#fffcee\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(246 242 241 / var(--tw-bg-opacity));
+  background-color: rgb(255 252 238 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#3D5A80\] {
   --tw-bg-opacity: 1;
   background-color: rgb(61 90 128 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fffcee\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 252 238 / var(--tw-bg-opacity));
 }
 
 .py-3 {
