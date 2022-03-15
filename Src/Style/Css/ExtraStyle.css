@@ -7,70 +7,34 @@ body{
 
 /* -------------Header--------------- */
 
-/* nav{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+nav{
     border-bottom: 1px solid #bfc5cd;
-    background-color: #F6F2F1;
-    align-items: center;
-    z-index: 100;
-
-}
-.navbar-brand{
-    transition: all 1s;
-}
-.navbar-brand:hover{
-    transform: scale(1.06);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
-.menu{
-    list-style: none;
-    gap: 2em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-top: 13px;
+.nav-menu{
+    transform: translateY(-3px);
 }
 
-.menu a{
-    text-decoration: none;
-    color:#313a47;
-    font-weight: 600;
-    transition: all 1s;
-}
-.menu a:hover{
-    color: #787785;
+.nav-brand img{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 
-.button{
-    padding-top: 14px;
-    position: absolute;
-    left: 0;
-}
-
-.button ul{
-    list-style: none;
-}
-
-
-.header-btn{
-    filter: initial;
+.nav-button{
     background-color: #f9f9f9;
     text-decoration: none;
-    color: #3c4859;;
+    color: #3c4859;
     border: 1px solid #bfc5cd;
     padding: 10px 16px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 14px;
 }
-.header-btn:hover{
-    color: #3c4859;;
-}
-
-.header-btn i{
-    padding-left: 3px;
-} */
 
 
 /* -------------Background - Section1--------------- */
@@ -158,7 +122,6 @@ body{
     border-radius: 40px 40px 0 0;
     position: relative;
     top: 460px;
-    padding-bottom: .5rem;
     -webkit-border-radius: 40px 40px 0 0;
     -moz-border-radius: 40px 40px 0 0;
     -ms-border-radius: 40px 40px 0 0;
@@ -199,15 +162,15 @@ body{
   }
   
   .color1 {
-    color: #3e1f47;
+    color: #3F3F46;
   }
   
   .color2 {
-    color: #1b3a4b;
+    color: #18181B; 
   }
   
   .color3 {
-    color: #4a4e69;
+    color: #57534E;
   }
   
   .card__body h3 {
@@ -263,6 +226,55 @@ body{
   }
   /*# sourceMappingURL=main.css.map */
 
+.custombrownboxShadow{
+    background: #18181B;
+    box-shadow: #18181B 0 0 40px;
+}
+.customorangeboxShadow{
+    background: #3F3F46;
+    box-shadow: #3F3F46 0 0 40px;
+}
+.customindigoboxShadow{
+    background: #404040;
+    box-shadow: #404040 0 0 40px;
+}
+.customgreenboxShadow{
+    background: #39312c;
+    box-shadow: #39312c 0 0 40px;
+}
+.customgrayboxShadow{
+    background: #57534E;
+    box-shadow: #57534E 0 0 40px;
+}
+.customYellowBoxShadow{
+    background: #374151;
+    box-shadow: #374151 0 0 40px;
+}
+
+.bg{
+    background: url(../img/school.png);
+}
+
+.custom-shape-divider-bottom-1647335588 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1647335588 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1647335588 .shape-fill {
+    fill: #FFFFFF;
+}
 
 
 /* -------------Media query--------------- */
@@ -303,6 +315,13 @@ body{
 }
 
 @media(max-width: 520.98px)
+{
+    .section-property{
+        top: 370px;
+    }
+}
+
+@media(max-width: 500.98px)
 {
     .section-property{
         top: 370px;
