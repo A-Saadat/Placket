@@ -257,22 +257,26 @@ nav{
     background: url(../img/school.png);
 }
 
-.custom-shape-divider-bottom-1647400492 {
+.custom-shape-divider-top-1647409516 {
     position: absolute;
-    top: 1286px;
+    top: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    background: url(../img/icon-background.png);
+    background: url(../img/low.png) repeat, linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(87,83,78,1) 28%, rgba(255,252,238,1) 100%);
+    background-size: 500px;
 }
 
-.custom-shape-divider-bottom-1647400492 svg {
+.custom-shape-divider-top-1647409516 svg {
     position: relative;
     display: block;
-    width: calc(148% + 1.3px);
-    height: 369px;
+    width: calc(100% + 1.3px);
+    height: 150px;
 }
 
-.custom-shape-divider-bottom-1647400492 .shape-fill {
+.custom-shape-divider-top-1647409516 .shape-fill {
     fill: #fffcee;
 }
 
