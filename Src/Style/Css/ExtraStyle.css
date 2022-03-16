@@ -226,6 +226,8 @@ nav{
   }
   /*# sourceMappingURL=main.css.map */
 
+  /* --------------------color-------------------------- */
+
 .custombrownboxShadow{
     background: #18181B;
     box-shadow: #18181B 0 0 40px;
@@ -255,26 +257,53 @@ nav{
     background: url(../img/school.png);
 }
 
-.custom-shape-divider-bottom-1647335588 {
+.custom-shape-divider-bottom-1647400492 {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 1286px;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1647335588 svg {
+.custom-shape-divider-bottom-1647400492 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 144px;
-    transform: rotateY(180deg);
+    width: calc(148% + 1.3px);
+    height: 369px;
 }
 
-.custom-shape-divider-bottom-1647335588 .shape-fill {
-    fill: #FFFFFF;
+.custom-shape-divider-bottom-1647400492 .shape-fill {
+    fill: #fffcee;
 }
+
+/* --------------------color-------------------------- */
+
+/* --------------------categories-------------------------- */
+
+.category__text{
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    transition: transform 600ms ease-in;
+    -webkit-transition: transform 600ms ease-in;
+    -moz-transition: transform 600ms ease-in;
+    -ms-transition: transform 600ms ease-in;
+    -o-transition: transform 600ms ease-in;
+}
+
+.card__animation:hover .category__text{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+/* --------------------categories-------------------------- */
+
+
 
 
 /* -------------Media query--------------- */
@@ -340,3 +369,11 @@ nav{
         gap: 2rem;
       }
 }
+
+
+/* position: absolute;
+top: -31px;
+padding: 0px 6px;
+background: #f0f8ffe0;
+border-radius: 25px;
+right: -20px; */
