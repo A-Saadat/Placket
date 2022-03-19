@@ -359,11 +359,11 @@ nav{
   }
   
   .ad__img :hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
   
   .ad__text {
@@ -407,12 +407,109 @@ nav{
 
 /* -------------------adv-------------------------------- */
 
+/* -----------------contact---------------------- */
+
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 0 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+
+.box1{
+    background-color: #2c2c31;
+    border: 2px solid ;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.box1:hover{
+    background-color: #323238;
+}
+
+.form__control{
+    margin: .5rem 0;
+    padding: .6rem 2rem;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus{
+    outline: none;
+}
+
+.contact{
+    background-color: #18181baf;
+}
+
+
+
+
+lable{
+    color: white;
+}
+
+/* -----------------contact---------------------- */
+
 /* -------------Media query--------------- */
 
 @media(max-width: 991.98px){
     .card__container {
         gap: 5rem;
       }
+}
+
+@media(max-width: 848.98px)
+{
+    .card__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ad__text{
+        transform: translateX(17%);
+        margin: auto;
+    }
+
+    .ad__card{
+        flex-direction: column;
+    }
+
+    .ad__img{
+        display: block;
+        margin: auto;
+    }
+
+    .ad__img img{
+        width: fit-content;
+    }
+
+    .ad__text{
+        margin-top: 10px;
+    }
+
+    .truncate{
+        width: 250px;
+    }
+
+    .contact{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .form__control{
+        width: 100%;
+    }
+}
+
+@media(max-width: 749.98px){
+    .ad__text{
+        transform: translateX(0);
+    }
+
+    
 }
 
 @media(max-width: 767.98px)
@@ -456,6 +553,10 @@ nav{
     .section-property{
         top: 370px;
     }
+
+    .contact{
+        width: 100%;
+    }
 }
 
 @media(max-width: 575.98px)
@@ -471,53 +572,16 @@ nav{
       }
 }
 
-@media(max-width: 850px)
-{
-    .ad__card{
-        flex-direction: column;
-    }
 
-    .ad__img{
-        display: block;
-        margin: auto;
-    }
-
-    .ad__img img{
-        width: fit-content;
-    }
-
-    .ad__text{
-        margin-top: 10px;
-    }
-
-    .truncate{
-        width: 250px;
-    }
-
-}
-
-@media(max-width: 848.98px)
-{
-    .card__wrapper{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .ad__text{
-        transform: translateX(17%);
-        margin: auto;
-    }
-}
-
-@media(max-width: 749.98px){
-    .ad__text{
-        transform: translateX(0);
-    }
-}
 
 @media(max-width: 615px)
 {
     .card__wrapper{
         display: block;
+    }
+
+    .hiddenBreak{
+        display: none;
     }
 
     .ad__card{
@@ -527,5 +591,19 @@ nav{
         height: fit-content;
         margin: auto;
         margin-bottom: 1rem;
+    }
+
+}
+
+@media(max-width: 390px)
+{
+    .ad__text{
+        position: relative;
+        right: 50px;
+        font-size: .8rem;
+    }
+
+    .ad__text h1{
+        font-size: 1rem;
     }
 }
