@@ -269,6 +269,11 @@ nav{
     background-size: 500px;
 }
 
+.haveBg{
+    background: url(../img/low.png) repeat;
+    background-size: 500px;
+}
+
 .custom-shape-divider-top-1647409516 svg {
     position: relative;
     display: block;
@@ -445,7 +450,10 @@ textarea:focus{
     background-color: #18181baf;
 }
 
-
+.contact__bg{
+    background: url(../img/low.png), #323238;
+    background-size: 100rem;
+}
 
 
 lable{
