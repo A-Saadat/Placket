@@ -274,6 +274,11 @@ nav{
     background-size: 500px;
 }
 
+.havebg2{
+    background: url(../img/low.png) repeat;
+    background-size: 500px;
+}
+
 .custom-shape-divider-top-1647409516 svg {
     position: relative;
     display: block;
@@ -287,6 +292,29 @@ nav{
 
 /* --------------------color-------------------------- */
 
+/* -------------------footer-------------------------- */
+
+.custom-shape-divider-top-1647764118 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1647764118 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 214px;
+}
+
+.custom-shape-divider-top-1647764118 .shape-fill {
+    fill: #27272A;
+}
+
+/* -------------------footer-------------------------- */
 
 
 /* --------------------categories-------------------------- */
