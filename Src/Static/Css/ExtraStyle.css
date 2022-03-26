@@ -25,7 +25,7 @@ nav{
     -o-transition: all 1s ease;
 }
 
-.nav-button{
+.nav__button{
     background-color: #f9f9f9;
     text-decoration: none;
     color: #3c4859;
@@ -35,6 +35,16 @@ nav{
     font-weight: 600;
     font-size: 14px;
 }
+
+.navbar__toggler__icon{
+    margin-left: 30px;
+}
+
+.navbar__toggler__icon:hover .nav__menu{
+    display: block;
+}
+
+
 
 
 /* -------------Background - Section1--------------- */
@@ -674,7 +684,14 @@ lable{
         transform: translateX(0);
     }
 
+
     
+}
+
+
+.nav__menu{
+    transform: translateY(120%);
+    justify-content: center;
 }
 
 @media(max-width: 767.98px)

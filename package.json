@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "watch": "npx tailwindcss -i ./Src/Style/Css/Style.css -o ./Src/Style/Css/main.css --watch",
+    "watch": "npx tailwindcss -i ./Src/Static/Css/Style.css -o ./Src/Static/Css/main.css --watch",
     "live": "npm install -g live-server"
   },
   "devDependencies": {
