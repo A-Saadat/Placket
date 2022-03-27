@@ -10,7 +10,8 @@ module.exports = {
       },
 
       fontFamily:{
-        vazir : "Vazir"
+        vazir : "Vazir",
+        lalezar : "Lalezar"
       }
 
     },
