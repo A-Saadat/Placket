@@ -62,64 +62,79 @@
             <img src="./Static/img/kimiagar.jpg" class="rounded-2xl h-fit xl:h-[40rem]" alt="">
         </div>
     
-        <div class="product__info mt-0 xl:mt-20 pl-10">
+        <div class="product__info mt-0 xl:mt-20 lg:pl-10 px-5">
     
-            <h1 class="py-2 px-5 w-full rounded-xl shadow-sm font-lalezar text-2xl">کتاب کیمیاگر</h1>
+            <div class="bg-[#FFE6A7] rounded-xl p-3 shadow-xl border-2 transition-all hover:scale-[1.02]">
 
-            <hr>
+              <h1 class="py-2 px-5 w-full font-lalezar text-2xl text-[#432818] border-b-2 border-[#5E503F]">کتاب کیمیاگر</h1>
 
-            <div class="px-5 py-2 flex items-start gap-2">
-                <span class="font-lalezar text-xl text-zinc-700">نوع کتاب: </span>
-                <span class="text-neutral-700 font-semibold">رمان - فلسفه</span>
-            </div>
 
             <div class="px-5 py-2 flex items-start gap-2">
-                <span class="font-lalezar text-xl text-zinc-700">قیمت:</span>
-                <span class="text-neutral-700 font-semibold">۶۵,۰۰۰ تومان</span>
+                <span class="font-lalezar text-lg text-[#432818]">نوع کتاب: </span>
+                <span class="text-[#99582A] font-semibold">رمان - فلسفه</span>
             </div>
 
             <div class="px-5 py-2 flex items-start gap-2">
-                <span class="font-lalezar text-xl text-zinc-700">نویسنده:</span>
-                <span class="text-neutral-700 font-semibold">پائولو کوئیلو</span>
+                <span class="font-lalezar text-lg text-[#432818]">قیمت:</span>
+                <span class="text-[#99582A] font-semibold">۶۵,۰۰۰ تومان</span>
             </div>
 
-            <h1 class="py-3 font-lalezar text-xl text-zinc-700">توضیحات</h1>
-
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-
-            <div>
-                <span>شماره فروشنده:</span>
-                <span>۰۹۰۱۹۶۰۴۶۶۲۲</span>
+            <div class="px-5 py-2 flex items-start gap-2">
+                <span class="font-lalezar text-lg text-[#432818]">نویسنده:</span>
+                <span class="text-[#99582A] font-semibold">پائولو کوئیلو</span>
             </div>
 
-            <hr>
+            </div>
 
-            <div>
+            <div class="pb-6 pt-4 text-[#99582A] font-semibold transition-all hover:scale-[1.02] bg-[#2d232e] rounded-xl py-3 px-5 shadow-xl mt-4">
 
-                <div class="profile">
-                    <img src="./Static/img/user.webp" alt="" class="card__thumb">
+              <h1 class=" font-lalezar text-2xl text-[#FFE6A7] pb-1 border-b-2 border-[#5E503F]">توضیحات</h1>
+
+              <p class="pt-2 leading-7 text-[#C6AC8F] text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
+
+
+            </div>
+
+            <div class="flex items-center justify-around">
+
+              <div class="text-center bg-slate-700 w-fit p-5 mt-3 rounded-2xl transition-all hover:scale-[1.02] shadow-xl">
+
+                <div class="">
+                    <img src="./Static/img/user.webp" alt="" class="card__thumb border-2 border-slate-500 block m-auto">
+                    <h1 class="font-lalezar text-2xl text-slate-400">علی سعادت</h1>
                 </div>
 
-                <div class="user__info">
-                    <h1>فلانی فلان زاده</h1>
+                <div class="user__info text-sm leading-[1.6rem] text-slate-200">
+                    
                     <div>این فروشنده ۱۰ آگهی موفق دارد</div>
+                    <div>
+                      <span>شماره فروشنده:</span>
+                      <a href="">
+                        <span>۰۹۰۱۹۶۰۴۶۶۲۲</span>
+                      </a>
+                  </div>
                 </div>
 
-                <div class="sell__btn">
+            </div>
 
-                    <a href="">
-                        <span></span>
-                        <span>ارتباط با فروشنده</span>
-                    </a>
+            <div class="sell__btn flex flex-col gap-y-2">
 
-                    <br>
+              <a href="" class="flex justify-center text-blue-600 font-semibold text-sm border-2 py-3 w-48 rounded-xl shadow-xltext-gray-2 gap-2">
+                  <span><i class="fa fa-comments" aria-hidden="true"></i></span>
+                  <span>ارتباط با فروشنده</span>
+              </a>
 
-                    <a href="">
-                        <span></span>
-                        <span>خرید</span>
-                    </a>
+              <a href="" class="flex justify-center text-blue-600 font-semibold text-sm border-2 py-3 w-48 rounded-xl shadow-xl gap-2">
+                  <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span>پیشنهاد قیمت</span>
+              </a>
 
-                </div>
+              <a href="" class="flex justify-center bg-blue-600 text-gray-250 font-semibold py-3 w-48 rounded-xl shadow-xl gap-2">
+                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                <span>خرید</span>
+              </a>
+
+            </div>
 
             </div>
     
