@@ -56,88 +56,107 @@
 
     </nav>
 
-    <div class="bg-gray-250 mx-10 lg:mx-32 my-10 rounded-xl border-2 border-neutral-400 flex items-center xl:items-start flex-col lg:flex-row ">
+    <div class="bg-gray-250 mx-10 lg:mx-32 my-10 rounded-xl border-2 border-neutral-400 flex gap-x-10 px-10 py-5 items-center flex-col lg:flex-row">
 
-        <div class="img overflow-hidden w-full md:w-1/2 lg:w-full p-10">
-            <img src="./Static/img/kimiagar.jpg" class="rounded-2xl h-fit xl:h-[40rem]" alt="">
+        <div class="product__img overflow-hidden px-32 mb-5 lg:px-0 rounded-2xl inline-block">
+            <img src="./Static/img/kimiagar.jpg" class="rounded-2xl border-2 object-cover h-full w-full transition-all duration-200 lg:hover:scale-110" alt="book_name">
         </div>
-    
-        <div class="product__info mt-0 xl:mt-20 lg:pl-10 px-5">
-    
-            <div class="bg-[#FFE6A7] rounded-xl p-3 shadow-xl border-2 transition-all hover:scale-[1.02]">
+          
+        <div class="pre__product">
 
-              <h1 class="py-2 px-5 w-full font-lalezar text-2xl text-[#432818] border-b-2 border-[#5E503F]">کتاب کیمیاگر</h1>
+          <div class="base__info">
+
+            <div class="bg-[#FFE6A7] rounded-xl p-3 shadow-xl border-2 transition-all hover:scale-105">
+
+            <h1 class="py-2 px-5 w-full font-lalezar text-2xl text-[#432818] border-b-2 border-[#5E503F]">کتاب کیمیاگر</h1>
 
 
-            <div class="px-5 py-2 flex items-start gap-2">
-                <span class="font-lalezar text-lg text-[#432818]">نوع کتاب: </span>
-                <span class="text-[#99582A] font-semibold">رمان - فلسفه</span>
+          <div class="px-5 py-2 flex items-start gap-2">
+              <span class="font-lalezar text-lg text-[#432818]">نوع کتاب: </span>
+              <span class="text-[#99582A] font-semibold">رمان - فلسفه</span>
+          </div>
+
+          <div class="px-5 py-2 flex items-start gap-2">
+              <span class="font-lalezar text-lg text-[#432818]">قیمت:</span>
+              <span class="text-[#99582A] font-semibold">۶۵,۰۰۰ تومان</span>
+          </div>
+
+          <div class="px-5 py-2 flex items-start gap-2">
+              <span class="font-lalezar text-lg text-[#432818]">نویسنده:</span>
+              <span class="text-[#99582A] font-semibold">پائولو کوئیلو</span>
+          </div>
+
             </div>
 
-            <div class="px-5 py-2 flex items-start gap-2">
-                <span class="font-lalezar text-lg text-[#432818]">قیمت:</span>
-                <span class="text-[#99582A] font-semibold">۶۵,۰۰۰ تومان</span>
-            </div>
+          </div>
 
-            <div class="px-5 py-2 flex items-start gap-2">
-                <span class="font-lalezar text-lg text-[#432818]">نویسنده:</span>
-                <span class="text-[#99582A] font-semibold">پائولو کوئیلو</span>
-            </div>
+          <div class="flex__system">
 
-            </div>
+            <div class="product__info min-w-[18.75rem]">
 
-            <div class="pb-6 pt-4 text-[#99582A] font-semibold transition-all hover:scale-[1.02] bg-[#2d232e] rounded-xl py-3 px-5 shadow-xl mt-4">
+              <div class="pb-6 pt-4 text-[#99582A] font-semibold transition-all hover:scale-105 bg-[#2d232e] rounded-xl py-3 px-5 shadow-xl mt-4">
 
               <h1 class=" font-lalezar text-2xl text-[#FFE6A7] pb-1 border-b-2 border-[#5E503F]">توضیحات</h1>
 
               <p class="pt-2 leading-7 text-[#C6AC8F] text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
 
+              </div>
 
             </div>
 
-            <div class="flex items-center justify-around">
+            <div class="flex items-center lg:justify-between justify-center">
+            
+              <div class="user__profile min-w-[13.75rem]">
 
-              <div class="text-center bg-slate-700 w-fit p-5 mt-3 rounded-2xl transition-all hover:scale-[1.02] shadow-xl">
+                <div class="text-center bg-slate-700 w-fit p-5 mt-3 rounded-2xl transition-all hover:scale-105 shadow-xl">
 
-                <div class="">
-                    <img src="./Static/img/user.webp" alt="" class="card__thumb border-2 border-slate-500 block m-auto">
-                    <h1 class="font-lalezar text-2xl text-slate-400">علی سعادت</h1>
-                </div>
-
-                <div class="user__info text-sm leading-[1.6rem] text-slate-200">
-                    
-                    <div>این فروشنده ۱۰ آگهی موفق دارد</div>
-                    <div>
-                      <span>شماره فروشنده:</span>
-                      <a href="">
-                        <span>۰۹۰۱۹۶۰۴۶۶۲۲</span>
-                      </a>
+                  <div>
+                      <img src="./Static/img/user.webp" alt="" class="card__thumb border-2 border-slate-500 block m-auto">
+                      <h1 class="font-lalezar text-2xl text-slate-400">علی سعادت</h1>
                   </div>
+
+                  <div class="user__info text-sm leading-[1.6rem] text-slate-200">
+                      
+                      <div>این فروشنده ۱۰ آگهی موفق دارد</div>
+                      <div>
+                        <span>شماره فروشنده:</span>
+                        <a href="">
+                          <span>۰۹۰۱۹۶۰۴۶۶۲۲</span>
+                        </a>
+                    </div>
+                  </div>
+
                 </div>
 
-            </div>
+              </div>
 
-            <div class="sell__btn flex flex-col gap-y-2">
+              <div class="purchase__btn">
 
-              <a href="" class="flex justify-center text-blue-600 font-semibold text-sm border-2 py-3 w-48 rounded-xl shadow-xltext-gray-2 gap-2">
-                  <span><i class="fa fa-comments" aria-hidden="true"></i></span>
-                  <span>ارتباط با فروشنده</span>
-              </a>
+                <div class="flex flex-col gap-y-2">
 
-              <a href="" class="flex justify-center text-blue-600 font-semibold text-sm border-2 py-3 w-48 rounded-xl shadow-xl gap-2">
+                <a href="" class="flex justify-center text-blue-600 hover:bg-blue-600 hover:text-gray-250 transition-all font-semibold text-sm border-2 py-3 w-48 rounded-xl shadow-md text-gray-2 gap-2">
+                    <span><i class="fa fa-comments" aria-hidden="true"></i></span>
+                    <span>ارتباط با فروشنده</span>
+                </a>
+
+                <a href="" class="flex justify-center text-blue-600 hover:bg-blue-600 hover:text-gray-250 transition-all font-semibold text-sm border-2 py-3 w-48 rounded-xl shadow-md gap-2">
+                    <span><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                    <span>پیشنهاد قیمت</span>
+                </a>
+
+                <a href="" class="flex justify-center bg-blue-600 hover:bg-gray-250 hover:text-blue-600 transition-all text-gray-250 font-semibold py-3 w-48 rounded-xl shadow-md gap-2">
                   <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                  <span>پیشنهاد قیمت</span>
-              </a>
+                  <span>خرید</span>
+                </a>
 
-              <a href="" class="flex justify-center bg-blue-600 text-gray-250 font-semibold py-3 w-48 rounded-xl shadow-xl gap-2">
-                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                <span>خرید</span>
-              </a>
+                </div>
 
-            </div>
+              </div>
 
             </div>
-    
+
+          </div>
+
         </div>
 
     </div>

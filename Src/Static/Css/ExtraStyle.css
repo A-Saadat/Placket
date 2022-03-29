@@ -632,14 +632,30 @@ lable{
 
 /* -----------------------------------------------------------Preview-------------------------------------------------------------------------------------------- */
 
-    .background__icon{
-        background: url(../img/low.png);
-        background-size: 30rem;
-    }
+.background__icon{
+    background: url(../img/low.png);
+    background-size: 30rem;
+}
+
+.product__info{
+    
+}
+
+
+
+
 
 /* -----------------------------------------------------------Preview-------------------------------------------------------------------------------------------- */
 
 /* -------------Media query--------------- */
+
+@media(max-width: 1023.98px){
+    .flex__system{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 2rem;
+    }
+}
 
 @media(max-width: 991.98px){
     .card__container {
@@ -686,6 +702,14 @@ lable{
 
     .form__control{
         width: 100%;
+    }
+
+    .flex__system{
+        display: block;
+    }
+    .purchase__btn{
+        display: flex;
+        justify-content: center;
     }
 }
 
