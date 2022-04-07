@@ -5,6 +5,13 @@ body{
     overflow-x: hidden;
 }
 
+input:focus,
+textarea:focus{
+  outline: none;
+  outline-offset: 0;
+  outline-width: 0;
+}
+
 /* -------------Header--------------- */
 
 nav{
@@ -646,7 +653,7 @@ body{
   .circle{
     position: absolute;
     border-radius: 50%;
-    background: white;
+    background: #F7F6F0;
     animation: ripple 15s infinite;
     box-shadow: 0px 0px 1px 0px #508fb9;
   }
@@ -690,19 +697,19 @@ body{
     opacity: 0.2;
   }
   .shade2{
-    opacity: 0.5;
+    opacity: 0.4;
   }
   
   .shade3{
-    opacity: 0.7;
+    opacity: 0.5;
   }
   
   .shade4{
-    opacity: 0.8;
+    opacity: 0.6;
   }
   
   .shade5{
-    opacity: 0.9;
+    opacity: 0.7;
   }
   
   @keyframes ripple{
@@ -725,6 +732,12 @@ body{
 
 /* -----------------------------------------------------------Login--------------------------------------------------------------- */
 
+
+.manual__login{
+  width: 40%;
+  border-left: 2px solid rgba(238, 238, 238, 0.233);
+}
+
 /* -------------Media query--------------- */
 
 @media(max-width: 1023.98px){
@@ -738,7 +751,7 @@ body{
 @media(max-width: 991.98px){
     .card__container {
         gap: 5rem;
-      }
+    }
 }
 
 @media(max-width: 848.98px)
@@ -789,15 +802,22 @@ body{
         display: flex;
         justify-content: center;
     }
+
+    .form__body{
+      flex-direction: column;
+    }
+    /* .manual__login{
+      width: 100%;
+      border-left: 0;
+      border-bottom: 2px solid rgba(238, 238, 238, 0.233);
+    } */
+
 }
 
 @media(max-width: 749.98px){
     .ad__text{
         transform: translateX(0);
-    }
-
-
-    
+    }   
 }
 
 
@@ -902,3 +922,4 @@ body{
         font-size: 1rem;
     }
 }
+
