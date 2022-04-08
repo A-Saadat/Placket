@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./Static/Css/ExtraStyle.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
-<body class="font-vazir overflow-y-hidden">
+<body class="font-vazir overflow-y-hidden h-screen">
 
         <div class="ripple-background">
 
@@ -27,16 +27,16 @@
         </div>
         
 
-        <div class="scale-100 hover:scale-105 transition-all duration-500 bg-slate-550 block m-auto mt-32 w-1/2 rounded-3xl py-10">
+        <div class="form scale-100 hover:scale-105 transition-all duration-500 bg-slate-550 block m-auto mt-32 mb-10 rounded-3xl py-10">
 
             <div class="form__title py-5">
                 <h1 class="font-lalezar text-center text-4xl text-blue-50">خوش اومدی!</h1>
                 <h6 class="text-center text-blue-50 font-semibold pt-4">برای وارد شدن به حساب کاربری، فرم زیر رو پر کن!</h6>
             </div>
 
-            <div class="form__body flex flex-col md:flex-row justify-center">
+            <div class="form__body flex justify-evenly">
 
-                <div class="manual__login w-[40%] md:border-l-2 border-[#f0f8ff38] md:px-5 mb-7">
+                <div class="manual__login border-l-2 px-5 border-[#f0f8ff38] mb-7">
 
                     <div class="inputs">
                         <label class="text-blue-50 font-semibold text-sm px-2">ایمیل</label>
@@ -55,11 +55,17 @@
 
                 </div>
 
-                <div class="translate-y-[-7px] font-lalezar flex md:flex-col gap-3 flex-wrap justify-center pr-5 order-first md:order-last">
-                    <a href="#" class="py-3 px-4 text-center text-lg text-[#D6E3E7] rounded-md max-w-[300px] transition-all duration-200 focus:ring-4 ring-blue-500 hover:bg-[#00ACEE9E] bg-[#00ACEE] ">ورود با اکانت توییتر</a>
-                    <a href="#" class="py-3 px-4 text-center text-lg text-[#D6E3E7] rounded-md max-w-[300px] transition-all duration-200 focus:ring-4 ring-blue-600 hover:bg-[#4267B299] bg-[#4267B2] ">ورود با اکانت فیسبوک</a>
-                    <a href="#" class="py-3 px-4 text-center text-lg text-[#D6E3E7] rounded-md max-w-[300px] transition-all duration-200 focus:ring-4 ring-red-700 hover:bg-[#AC372DC9] bg-[#8E2E26] ">ورود با اکانت گوگل</a>
-                </div>
+                <ul class="quick__login font-lalezar">
+                    <li class="text-center">
+                        <a href="#" class=" text-lg text-[#D6E3E7] rounded-md transition-all py-3 px-4 flex duration-200 focus:ring-4 ring-blue-500 hover:bg-[#00ACEE9E] bg-[#00ACEE]">ورود با اکانت توییتر</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#" class=" text-lg text-[#D6E3E7] rounded-md transition-all py-3 px-4 flex duration-200 focus:ring-4 ring-blue-600 hover:bg-[#4267B299] bg-[#4267B2]">ورود با اکانت فیسبوک</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#" class=" text-lg text-[#D6E3E7] rounded-md transition-all py-3 px-4 flex duration-200 focus:ring-4 ring-red-700 hover:bg-[#AC372DC9] bg-[#8E2E26]">ورود با اکانت گوگل</a>
+                    </li>
+                </ul>
 
             </div>
 

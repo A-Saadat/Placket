@@ -637,13 +637,26 @@ lable{
 /* -----------------contact---------------------- */
 
 
-/* -----------------------------------------------------------Preview-------------------------------------------------------------------------------------------- */
-
-/* -----------------------------------------------------------Preview-------------------------------------------------------------------------------------------- */
-
 /* -----------------------------------------------------------Login--------------------------------------------------------------- */
 
-/* ----stars------- */
+.form{
+  width: 50%;
+}
+
+.manual__login{
+  width: 40%;
+  border-left: 2px solid rgba(238, 238, 238, 0.233);
+}
+
+.quick__login{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 1rem 0;
+  margin-top: 1.5rem;
+}
+
+/* -----------------------------------------------------------Login--------------------------------------------------------------- */
 
 body{
     background: #362C36;
@@ -733,10 +746,7 @@ body{
 /* -----------------------------------------------------------Login--------------------------------------------------------------- */
 
 
-.manual__login{
-  width: 40%;
-  border-left: 2px solid rgba(238, 238, 238, 0.233);
-}
+
 
 /* -------------Media query--------------- */
 
@@ -806,13 +816,36 @@ body{
     .form__body{
       flex-direction: column;
     }
-    /* .manual__login{
+    
+    .quick__login{
+      order: 1;
+      margin-top: 1rem;
+      flex-direction: row;
+    }
+
+    .manual__login{
+      order: 99999;
       width: 100%;
-      border-left: 0;
-      border-bottom: 2px solid rgba(238, 238, 238, 0.233);
-    } */
+      border: 0;
+      padding: 0 1rem;
+    }
+
+    .form{
+      width: 80%;
+    }
+
+    .quick__login{
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+      flex-direction: row;
+      width: auto;
+    }
 
 }
+
+
 
 @media(max-width: 749.98px){
     .ad__text{
@@ -870,6 +903,10 @@ body{
 
     .contact{
         width: 100%;
+    }
+
+    .form{
+      width: 95%;
     }
 }
 
