@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+body{
+    font-family: 'vazir';
+    /* background: url(../img/bg-pattern2-low.png), linear-gradient(207deg, rgba(51,61,41,1) 6%, rgba(70,79,60,1) 40%, rgba(164,172,134,1) 100%);
+    background-size: 50rem; */
+}
+
+.product_system{
+    display: grid;
+    grid-template-areas:
+    "sidebar nav nav nav" 
+    "sidebar content content content"
+    "sidebar content content content"
+    "sidebar content content content"
+    "sidebar content content content"
+    "sidebar content content content"
+    ;
+}
+
+.sidebar_logo{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+
+.product_nav{
+    grid-area: nav;
+}
+
+.dashbord{
+    grid-area: sidebar;
+}
+
+.product_list{
+    grid-area: content;
+}
