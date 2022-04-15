@@ -14,38 +14,46 @@
     <link rel="stylesheet" href="./Static/Css/Card.css">
     <link rel="stylesheet" href="./Static/Css/Product-list.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
+    <link href="//db.onlinewebfonts.com/c/7296ae79f6faca68798b00fbbbee4c22?family=Yekan+Bakh" rel="stylesheet" type="text/css"/>
 </head>
 <body class="">
 
-    <div class="product_system bg-gray-250">
+    <div class="product_system bg-green-250">
     
-        <nav class="product_nav flex">
+        <nav class="product_nav ">
 
-            <div>
-                <input type="text">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <ul class="flex items-center relative mx-10">
+                
+                <li>
+                    <div class="w-[30rem] flex items-center absolute right-0 top-5">
+                        <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
+                        <i class="fa-solid fa-magnifying-glass absolute left-2 text-sm"></i>
+                    </div>
+                </li>
 
-            <div class="pofile_panel">
-                <div class="icons flex gap-2">
-                    <div>
-                        <i class="fa-solid fa-bell"></i>
+                <li class="flex items-center absolute left-0 top-4">
+                    <div class="icons flex gap-2">
+                        <div>
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    <div class="profile flex items-center">
+                        <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
+                        <span>علی سعادت</span>
                     </div>
-                </div>
-                <div class="profile flex items-center">
-                    <span>علی سعادت</span>
-                    <img class="card__thumb" src="./Static/img/user.webp" alt="" />
-                </div>
-            </div>
+                </li>
+
+            </ul>
 
         </nav>
 
         <div class="dashbord bg-green-650 p-7">
 
-            <div class="sidebar_logo flex items-center gap-1 justify-center transition-all duration-150 mb-16">
+            <div class="sidebar_logo flex items-center gap-1 justify-center transition-all duration-150 mb-24">
                 <img src="./Static/img/logo_Simple2.png" alt="" width="45">
                 <span class="font-lalezar text-4xl text-gray-250">پلاکت</span>
             </div>
@@ -53,35 +61,35 @@
             <ul class="flex gap-y-3 flex-col">
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-center gap-4 text-gray-250 font-medium" href="">
+                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
                         <i class="fa-solid fa-house scale-110"></i>
                         صفحه اصلی
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-center gap-4 text-gray-250 font-medium" href="">
+                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
                         <i class="fa-solid fa-house scale-110"></i>
                         صفحه اصلی
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-center gap-4 text-gray-250 font-medium" href="">
+                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
                         <i class="fa-solid fa-house scale-110"></i>
                         صفحه اصلی
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-center gap-4 text-gray-250 font-medium" href="">
+                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
                         <i class="fa-solid fa-house scale-110"></i>
                         صفحه اصلی
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-center gap-4 text-gray-250 font-medium" href="">
+                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
                         <i class="fa-solid fa-house scale-110"></i>
                         صفحه اصلی
                     </a>
@@ -91,7 +99,7 @@
 
         </div>
 
-        <div class="product_list">
+        <div class="product_list mt-10">
         
             <ul class="cards font-vazir" dir="rtl">
 
@@ -101,13 +109,13 @@
                     <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                        <img class="card__thumb" src="./Static/img/user.webp" alt="" />
+                        <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
                         <div class="card__header-text">
-                        <h3 class="card__title font-[lalezar] text-xl"> کار عمیق</h3>            
-                        <span class="card__status">۱ ساعت پیش</span>
+                        <h3 class="card__title text-green-650 font-[lalezar] text-xl"> کار عمیق</h3>            
+                        <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
                         </div>
                     </div>
-                    <p class="card__description truncate">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
                     </div>
                 </a>      
                 </li>
@@ -118,30 +126,30 @@
                     <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                        <img class="card__thumb" src="./Static/img/user.webp" alt="" />
+                        <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
                         <div class="card__header-text">
-                        <h3 class="card__title font-[lalezar] text-xl">کیمیاگر</h3>            
-                        <span class="card__status">۱ ساعت پیش</span>
+                        <h3 class="card__title text-green-650 font-[lalezar] text-xl">کیمیاگر</h3>            
+                        <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
                         </div>
                     </div>
-                    <p class="card__description truncate">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
                     </div>
                 </a>      
                 </li>
 
                 <li class="min">
                 <a href="" class="card">
-                    <img src="./Static/img/Secret.jpg" class="card__image" alt="" />
+                    <img src="./Static/img/Secret.jpg" class="card__image " alt="" />
                     <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                        <img class="card__thumb" src="./Static/img/user.webp" alt="" />
+                        <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
                         <div class="card__header-text">
-                        <h3 class="card__title font-[lalezar] text-xl">راز</h3>            
-                        <span class="card__status">۱ ساعت پیش</span>
+                        <h3 class="card__title text-green-650 font-[lalezar] text-xl ">راز</h3>            
+                        <span class="card__status text-gray-550 font-semibold ">۱ ساعت پیش</span>
                         </div>
                     </div>
-                    <p class="card__description truncate">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
                     </div>
                 </a>      
                 </li>
@@ -152,16 +160,101 @@
                     <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                        <img class="card__thumb" src="./Static/img/user.webp" alt="" />
+                        <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
                         <div class="card__header-text">
-                        <h3 class="card__title font-[lalezar] text-xl">ملت عشق</h3>            
-                        <span class="card__status">۱ ساعت پیش</span>
+                        <h3 class="card__title text-green-650 font-[lalezar] text-xl">ملت عشق</h3>            
+                        <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
                         </div>
                     </div>
-                    <p class="card__description truncate">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
                     </div>
                 </a>      
                 </li>
+
+                <li class="min">
+                    <a href="" class="card">
+                        <img src="./Static/img/Melat.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
+                            <div class="card__header-text">
+                            <h3 class="card__title text-green-650 font-[lalezar] text-xl">ملت عشق</h3>            
+                            <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
+                            </div>
+                        </div>
+                        <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                        </div>
+                    </a>      
+                    </li>
+
+                <li class="min">
+                    <a href="" class="card">
+                        <img src="./Static/img/Melat.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
+                            <div class="card__header-text">
+                            <h3 class="card__title text-green-650 font-[lalezar] text-xl">ملت عشق</h3>            
+                            <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
+                            </div>
+                        </div>
+                        <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                        </div>
+                    </a>      
+                    </li>
+
+                <li class="min">
+                    <a href="" class="card">
+                        <img src="./Static/img/Melat.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
+                            <div class="card__header-text">
+                            <h3 class="card__title text-green-650 font-[lalezar] text-xl">ملت عشق</h3>            
+                            <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
+                            </div>
+                        </div>
+                        <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                        </div>
+                    </a>      
+                    </li>
+
+                <li class="min">
+                    <a href="" class="card">
+                        <img src="./Static/img/Melat.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
+                            <div class="card__header-text">
+                            <h3 class="card__title text-green-650 font-[lalezar] text-xl">ملت عشق</h3>            
+                            <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
+                            </div>
+                        </div>
+                        <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                        </div>
+                    </a>      
+                    </li>
+
+                <li class="min">
+                    <a href="" class="card">
+                        <img src="./Static/img/Melat.jpg" class="card__image" alt="" />
+                        <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt="" />
+                            <div class="card__header-text">
+                            <h3 class="card__title text-green-650 font-[lalezar] text-xl">ملت عشق</h3>            
+                            <span class="card__status text-gray-550 font-semibold">۱ ساعت پیش</span>
+                            </div>
+                        </div>
+                        <p class="card__description truncate text-[#a4ac86]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                        </div>
+                    </a>      
+                    </li>
                 
             </ul>
         

@@ -7,12 +7,12 @@ module.exports = {
         green:{
           650: "#333D29",
           450: "#464f3c",
+          250: "#C2C5AA"
         },
         gray:{
           250: "#fffcee",
-          550: "4f6069",
-          350: "5f6e77",
-
+          550: "#4f6069",
+          350: "#5f6e77",
         },
         slate:{
           850: "#362C36",
@@ -35,7 +35,8 @@ module.exports = {
 
       fontFamily:{
         vazir : "Vazir",
-        lalezar : "Lalezar"
+        lalezar : "Lalezar",
+        YekanBakh : "Yekan Bakh"
       }
 
     },
