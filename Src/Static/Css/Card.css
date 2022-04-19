@@ -89,7 +89,6 @@
 .card__tagline {
   display: block;
   margin: 1em 0;
-  font-family: "MockFlowFont";  
   font-size: .8em; 
   color: #D7BDCA;  
 }

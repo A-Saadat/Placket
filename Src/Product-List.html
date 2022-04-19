@@ -20,30 +20,41 @@
 
     <div class="product_system bg-green-250">
     
-        <nav class="product_nav ">
+        <nav class="product_nav">
 
             <ul class="flex items-center relative mx-10">
                 
-                <li>
+                <li class="navbar_toggler">
+                    <svg class="burger-btn active" width="80" height="52" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
+                        <rect class="burger-btn--2" width="40" height="6" y="10" rx="3" ry="3" />
+                        <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
+                    </svg>
+                </li>
+
+                <li class="nav_input">
                     <div class="w-[30rem] flex items-center absolute right-0 top-5">
                         <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
-                        <i class="fa-solid fa-magnifying-glass absolute left-2 text-sm"></i>
+                        <a href="#" class="absolute left-3 text-sm top-[13px]">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
                     </div>
                 </li>
 
-                <li class="flex items-center absolute left-0 top-4">
-                    <div class="icons flex gap-2">
-                        <div>
-                            <i class="fa-solid fa-bell"></i>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                        </div>
+                <li class="flex items-center absolute left-0 top-4 gap-8">
+                    <div class="icons flex gap-4">
+                        <a href="#" class="text-inherit">
+                            <i class="fa-solid fa-bell text-green-650 text-2xl" title=" اعلان ها"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-clock-rotate-left text-green-650 text-2xl " title="اخرین درخواست ها"></i>
+                        </a>
                     </div>
 
-                    <div class="profile flex items-center">
-                        <img class="card__thumb border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
+                    <div class="profile flex items-center gap-3 cursor-pointer relative ">
+                        <img class="card__thumb w-[45px] h-[45px] border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
                         <span>علی سعادت</span>
+                        <i class="fa-solid fa-chevron-down text-sm translate-y-[-2px]"></i>
                     </div>
                 </li>
 
@@ -51,48 +62,59 @@
 
         </nav>
 
+        
+
         <div class="dashbord bg-green-650 p-7">
 
             <div class="sidebar_logo flex items-center gap-1 justify-center transition-all duration-150 mb-24">
                 <img src="./Static/img/logo_Simple2.png" alt="" width="45">
-                <span class="font-lalezar text-4xl text-gray-250">پلاکت</span>
+                <span class="font-lalezar text-4xl text-gray-250 logo">پلاکت</span>
             </div>
 
             <ul class="flex gap-y-3 flex-col">
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
                         <i class="fa-solid fa-house scale-110"></i>
-                        صفحه اصلی
+                        <span class="item">صفحه اصلی</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
                         <i class="fa-solid fa-house scale-110"></i>
-                        صفحه اصلی
+                        <span class="item">صفحه اصلی</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
                         <i class="fa-solid fa-house scale-110"></i>
-                        صفحه اصلی
+                        <span class="item">صفحه اصلی</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
                         <i class="fa-solid fa-house scale-110"></i>
-                        صفحه اصلی
+                        <span class="item">صفحه اصلی</span>
                     </a>
                 </li>
 
                 <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="flex items-baseline gap-4 text-gray-250 font-medium" href="">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
                         <i class="fa-solid fa-house scale-110"></i>
-                        صفحه اصلی
+                        <span class="item">صفحه اصلی</span>
                     </a>
+                </li>
+
+                <li class="dashbord_input">
+                    <div class="flex items-center absolute right-0 top-5">
+                        <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
+                        <a href="#" class="absolute left-3 text-sm top-[13px]">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
                 </li>
 
             </ul>
@@ -261,6 +283,8 @@
         </div>
 
     </div>
+
+    <script src="./Static/Js/main.js"></script>
 
 </body>
 </html>
