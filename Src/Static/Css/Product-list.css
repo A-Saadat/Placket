@@ -32,8 +32,28 @@ body{
     grid-area: nav;
 }
 
+.close_btn{
+    display: none;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 1.7rem;
+    color: #feecee52;
+    cursor: pointer;
+}
+
 .dashbord{
     grid-area: sidebar;
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    width: 100%;
+    max-width: 16rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .product_list{
@@ -48,26 +68,20 @@ textarea:focus{
 }
 
 .truncate{
-    width: 300px;
+    width: 20rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.log_out{
-    position: absolute;
-    transform: translate(-20px, 45px);
-    -webkit-transform: translate(-20px, 45px);
-    -moz-transform: translate(-20px, 45px);
-    -ms-transform: translate(-20px, 45px);
-    -o-transform: translate(-20px, 45px);
+.icons{
+    display: flex;
 }
 
-.log_out a{
-    background: red;
-padding: 6px 10px;
-font-size: 15px;
+.overflow_hidden{
+    overflow: hidden;
 }
+
 
 /* ---------------------------menu-toggler --------------------------------*/
 
@@ -80,7 +94,7 @@ font-size: 15px;
     overflow: visible;
     cursor: pointer;
     fill: #1e272e;
-    width: 2rem;
+    width: 1.75rem;
     display: none;
   }
   
@@ -106,6 +120,14 @@ font-size: 15px;
     -webkit-transform: translate(-7px, -7px) rotate(-45deg);
             transform: translate(-7px, -7px) rotate(-45deg);
   }
+
+  .toggler{
+    transform: translateX(0) !important;
+    -webkit-transform: translateX(0) !important;
+    -moz-transform: translateX(0) !important;
+    -ms-transform: translateX(0) !important;
+    -o-transform: translateX(0) !important;
+}
   /* ---------------------------menu-toggler --------------------------------*/
 
 
@@ -114,7 +136,7 @@ font-size: 15px;
       width: fit-content;
   }
 
-  @media(max-width: 1100px){
+@media(max-width: 1100px){
 
     .dashbord{
         position: absolute;
@@ -124,6 +146,7 @@ font-size: 15px;
         -moz-transform: translateX(100%);
         -ms-transform: translateX(100%);
         -o-transform: translateX(100%);
+        width: 17rem;
     }
 
     .burger-btn{
@@ -135,6 +158,10 @@ font-size: 15px;
     }
     .nav_input{
         display: none;
+    }
+
+    .close_btn{
+        display: block;
     }
 }
 
@@ -149,5 +176,11 @@ font-size: 15px;
         "sidebar content content content content"
         "sidebar content content content content"
         ;
+    }
+}
+
+@media(max-width: 400px){
+    .icons{
+        display: none;
     }
 }
