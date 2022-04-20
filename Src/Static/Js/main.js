@@ -17,3 +17,4 @@ function menu_click(element){
 
 menu_click(button);
 menu_click(close_btn);
+menu_click(blur)
