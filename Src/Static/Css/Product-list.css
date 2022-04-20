@@ -44,11 +44,11 @@ body{
 
 .dashbord{
     grid-area: sidebar;
-    transition: transform 1s ease;
-    -webkit-transition: transform 1s ease;
-    -moz-transition: transform 1s ease;
-    -ms-transition: transform 1s ease;
-    -o-transition: transform 1s ease;
+    transition: transform 300ms ease;
+    -webkit-transition: transform 300ms ease;
+    -moz-transition: transform 300ms ease;
+    -ms-transition: transform 300ms ease;
+    -o-transition: transform 300ms ease;
     width: 100%;
     max-width: 16rem;
     height: 100vh;
@@ -81,6 +81,22 @@ textarea:focus{
 .overflow_hidden{
     overflow: hidden;
 }
+
+.black_box{
+    background-color: #1e272ecb;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+.blur{
+    display: block !important;
+}
+
+
 
 
 /* ---------------------------menu-toggler --------------------------------*/
@@ -182,5 +198,18 @@ textarea:focus{
 @media(max-width: 400px){
     .icons{
         display: none;
+    }
+}
+
+@media(max-width: 641.98px){
+    
+    .min{
+        margin: 0 10vw;
+    }
+}
+
+@media(max-width: 470.98px){
+    .min{
+        margin: 0;
     }
 }

@@ -19,6 +19,7 @@
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  
 }
 
 .card__image {      
