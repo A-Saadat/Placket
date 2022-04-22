@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -535,9 +539,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mr-5 {
@@ -620,24 +624,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.75rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mb-24 {
   margin-bottom: 6rem;
 }
 
-.block {
-  display: block;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
-.inline-block {
-  display: inline-block;
+.block {
+  display: block;
 }
 
 .flex {
@@ -666,10 +662,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[45px\] {
   height: 45px;
 }
@@ -688,24 +680,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
-.w-48 {
-  width: 12rem;
-}
-
 .w-\[30rem\] {
   width: 30rem;
 }
 
 .w-\[45px\] {
   width: 45px;
-}
-
-.min-w-\[18\.75rem\] {
-  min-width: 18.75rem;
-}
-
-.min-w-\[13\.75rem\] {
-  min-width: 13.75rem;
 }
 
 .translate-y-\[19rem\] {
@@ -782,10 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
 }
@@ -796,6 +772,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-evenly {
@@ -846,16 +826,16 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 1.25rem;
 }
 
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
 .gap-y-3 {
   row-gap: 0.75rem;
 }
 
 .self-start {
   align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-hidden {
@@ -913,6 +893,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-left-width: 2px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-gray-250 {
   --tw-border-opacity: 1;
   border-color: rgb(255 252 238 / var(--tw-border-opacity));
@@ -922,24 +906,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: #f0f8ff38;
 }
 
-.border-neutral-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(163 163 163 / var(--tw-border-opacity));
-}
-
-.border-\[\#5E503F\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(94 80 63 / var(--tw-border-opacity));
-}
-
-.border-slate-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-border-opacity));
-}
-
 .border-green-650 {
   --tw-border-opacity: 1;
   border-color: rgb(51 61 41 / var(--tw-border-opacity));
+}
+
+.border-lowOpacity {
+  border-color: rgba(112, 112, 112, .4);
 }
 
 .bg-gray-250 {
@@ -1002,26 +975,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(142 46 38 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FFE6A7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 230 167 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2d232e\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 35 46 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .bg-green-250 {
   --tw-bg-opacity: 1;
   background-color: rgb(194 197 170 / var(--tw-bg-opacity));
@@ -1037,13 +990,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(51 61 41 / var(--tw-bg-opacity));
 }
 
-.fill-slate-200 {
-  fill: #e2e8f0;
+.bg-green-750 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 54 24 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.bg-green-350 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 108 56 / var(--tw-bg-opacity));
+}
+
+.fill-slate-200 {
+  fill: #e2e8f0;
 }
 
 .p-10 {
@@ -1058,16 +1016,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-7 {
   padding: 1.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-3 {
@@ -1130,11 +1084,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1191,12 +1140,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-center {
@@ -1221,6 +1166,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-lalezar {
   font-family: Lalezar;
+}
+
+.font-YekanBakh {
+  font-family: Yekan Bakh;
 }
 
 .text-lg {
@@ -1267,14 +1216,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-light {
   font-weight: 300;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-\[1\.6rem\] {
-  line-height: 1.6rem;
 }
 
 .text-\[\#313a47\] {
@@ -1342,41 +1283,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(214 227 231 / var(--tw-text-opacity));
 }
 
-.text-\[\#432818\] {
-  --tw-text-opacity: 1;
-  color: rgb(67 40 24 / var(--tw-text-opacity));
-}
-
-.text-\[\#99582A\] {
-  --tw-text-opacity: 1;
-  color: rgb(153 88 42 / var(--tw-text-opacity));
-}
-
-.text-\[\#FFE6A7\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 230 167 / var(--tw-text-opacity));
-}
-
-.text-\[\#C6AC8F\] {
-  --tw-text-opacity: 1;
-  color: rgb(198 172 143 / var(--tw-text-opacity));
-}
-
-.text-slate-400 {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .text-\[\#333d29\] {
   --tw-text-opacity: 1;
   color: rgb(51 61 41 / var(--tw-text-opacity));
@@ -1401,21 +1307,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(164 172 134 / var(--tw-text-opacity));
 }
 
+.text-light-350 {
+  --tw-text-opacity: 1;
+  color: rgb(254 250 224 / var(--tw-text-opacity));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1457,6 +1356,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ring-green-450 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(70 79 60 / var(--tw-ring-opacity));
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
@@ -1542,6 +1446,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-\[\#061A23\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(6 26 35 / var(--tw-bg-opacity));
@@ -1569,16 +1479,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: #AC372DC9;
 }
 
-.hover\:bg-blue-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-250:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 252 238 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-green-450:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(70 79 60 / var(--tw-bg-opacity));
@@ -1592,16 +1492,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-\[blanchedalmond\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 235 205 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-250:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 252 238 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .focus\:ring-4:focus {
@@ -1715,10 +1605,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
-  }
-
   .lg\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -1727,19 +1613,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-left-width: 2px;
   }
 
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .lg\:pb-5 {
     padding-bottom: 1.25rem;
-  }
-
-  .lg\:hover\:scale-110:hover {
-    --tw-scale-x: 1.1;
-    --tw-scale-y: 1.1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 

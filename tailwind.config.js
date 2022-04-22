@@ -5,10 +5,15 @@ module.exports = {
 
       colors:{
         green:{
+          250: "#C2C5AA",
+          350: "#606C38",
+          450: "#464f3c", 
           650: "#333D29",
-          450: "#464f3c",
-          250: "#C2C5AA"
+          750: "#283618",
+
         },
+        lowOpacity: "rgba(112, 112, 112, .4)",
+
         gray:{
           250: "#fffcee",
           550: "#4f6069",
@@ -29,9 +34,12 @@ module.exports = {
           50: "#A7CBD5"
         },
         light:{
-          150: "#F7F6F0"
+          150: "#F7F6F0",
+          350: "#FEFAE0"
         }
       },
+
+      
 
       fontFamily:{
         vazir : "Vazir",
