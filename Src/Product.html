@@ -10,25 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./Static/Font Awaesome/all.css">
+    <link href="//db.onlinewebfonts.com/c/7296ae79f6faca68798b00fbbbee4c22?family=Yekan+Bakh" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./Static/Css/Product.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
 <body class="font-YekanBakh">
 
-    <div class="product">
+    <div class="flex justify-center">
+
+    <div class="product flex bg-light-350 rounded-2xl gap-2 pl-10 items-center">
         
-        <div class="product_info bg-green-750 text-light-350 w-fit h-fit p-6 rounded-3xl flex flex-col justify-center m-10">
+        <div class="product_info bg-green-750 text-light-350 w-fit h-fit p-6 rounded-3xl flex flex-col justify-center">
 
             <div class="product_img rounded-3xl mb-3">
                 <img src="./Static/img/The Righteous mind.webp" class="hover:scale-110 transition-all duration-150" alt="${book_name}">
             </div>
 
-            
-
             <div class="product_body">
 
-                <div class="seller flex flex-col text-center gap-1 my-2 border-b-2 border-t-2 border-lowOpacity  p-2">
+                <div class="flex flex-col text-center gap-1 my-2 border-b-2 border-t-2 border-lowOpacity  p-2">
                     <span>فروشنده: علی سعادت</span>
                     <span>ارتباط با فروشنده</span>
                 </div>
@@ -49,39 +50,40 @@
 
         </div>
 
-        <div class="product_dspt">
+        <div class="product_dspt flex items-center">
 
-            <div>
+            <div class="w-fit">
 
-                <h1>کتاب ذهن درستکار</h1>
+                <h1 class="text-xl border-b-2 border-lowOpacity py-3">کتاب ذهن درستکار</h1>
 
-                <div>
-                    <h1>مشخصات:</h1>
-                    <ul>
+                <div class="py-4 border-b-2 border-lowOpacity">
+                    <h1 class="text-lg">مشخصات:</h1>
+                    <ul class="mx-6">
                         <li>نویسند: جاناتان هایت</li>
                         <li>قیمت جلد: ۷۰,۰۰۰ تومان</li>
                         <li>سال چاپ: ۱۳۹۶</li>
                     </ul>
                 </div>
 
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه</p>
+                <div class="py-4 border-b-2 border-lowOpacity">
+                    <h1 class="text-lg pb-1">مشخصات تکمیلی</h1>
+                    <p class="mx-6 truncate">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه</p>
+                </div>
 
-                <div class="seller">
-                    <h1>مشخصات فروشنده</h1>
-                    <div class="seller_profile">
-                        <div class="profile">
-                            <img src="" alt="">
-                            <span>علی سعادت</span>
-                        </div>
-                        <div class="seller_info">
-                            <span>این فروشنده ۱۰ آگهی موفق داشته!</span>
-                            <div class="point">
-                                <span>امتیاز فروشنده</span>
-                                <i></i>
-                                ۱۰۰۲۳xp
-                            </div>
+                <div class="seller mt-5 bg-green-250 text-green-750 flex gap-5 p-5 rounded-2xl max-w-xs">
+                    
+                    <div class="overflow-hidden w-[50px] rounded-xl">
+                        <img class="seller_img hover:scale-110 transition-all duration-150" src="./Static/img/user.webp" alt="">
+                    </div>
+
+                    <div class="seller_dspt">
+                        <h1>علی سعادت</h1>
+                        <div>
+                            <span>امتیاز فروشنده:</span>
+                            <span> ۱۲۱۱۱۰</span>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -89,6 +91,8 @@
         </div>
 
     </div>
+
+</div>
 
 </body>
 </html>
