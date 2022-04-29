@@ -12,29 +12,26 @@
     <link rel="stylesheet" href="./Static/Font Awaesome/all.css">
     <link href="//db.onlinewebfonts.com/c/7296ae79f6faca68798b00fbbbee4c22?family=Yekan+Bakh" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="./Static/Css/Product.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
 <body class="font-YekanBakh">
 
-    <div class="flex justify-center">
-
-    <div class="product flex bg-light-350 rounded-2xl gap-2 pl-10 items-center">
+    <div class="container flex bg-light-350 ">
         
-        <div class="product_info bg-green-750 text-light-350 w-fit h-fit p-6 rounded-3xl flex flex-col justify-center">
+        <div class="product_info bg-green-750 text-light-350 p-6 rounded-3xl flex flex-col justify-center">
 
-            <div class="product_img rounded-3xl mb-3">
-                <img src="./Static/img/The Righteous mind.webp" class="hover:scale-110 transition-all duration-150" alt="${book_name}">
+            <div class="product_img rounded-3xl mb-3 overflow-hidden">
+                <img src="./Static/img/The Righteous mind.webp" class="hover:scale-110 transition-all duration-150 w-screen" alt="${book_name}">
             </div>
 
             <div class="product_body">
 
-                <div class="flex flex-col text-center gap-1 my-2 border-b-2 border-t-2 border-lowOpacity  p-2">
+                <div class="flex flex-col text-center gap-1 my-2 border-b-2 border-t-2 border-lowOpacity p-2">
                     <span>فروشنده: علی سعادت</span>
                     <span>ارتباط با فروشنده</span>
                 </div>
-
-                
 
                 <div class="buy flex justify-between items-center pt-3 pb-2 px-2">
                     <div class="price flex gap-1">
@@ -45,54 +42,52 @@
                         درخواست خرید
                     </button>
                 </div>
-
             </div>
 
         </div>
 
-        <div class="product_dspt flex items-center">
+        <div class="product_dstp flex flex-col">
+            <h1 class="text-xl border-b-2 py-3">کتاب ذهن درستکار</h1>
+            <div class="info border-b-2">
+                <h2 class="text-lg">مشخصات</h2>
 
-            <div class="w-fit">
-
-                <h1 class="text-xl border-b-2 border-lowOpacity py-3">کتاب ذهن درستکار</h1>
-
-                <div class="py-4 border-b-2 border-lowOpacity">
-                    <h1 class="text-lg">مشخصات:</h1>
-                    <ul class="mx-6">
-                        <li>نویسند: جاناتان هایت</li>
-                        <li>قیمت جلد: ۷۰,۰۰۰ تومان</li>
-                        <li>سال چاپ: ۱۳۹۶</li>
-                    </ul>
-                </div>
-
-                <div class="py-4 border-b-2 border-lowOpacity">
-                    <h1 class="text-lg pb-1">مشخصات تکمیلی</h1>
-                    <p class="mx-6 truncate">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه</p>
-                </div>
-
-                <div class="seller mt-5 bg-green-250 text-green-750 flex gap-5 p-5 rounded-2xl max-w-xs">
-                    
-                    <div class="overflow-hidden w-[50px] rounded-xl">
-                        <img class="seller_img hover:scale-110 transition-all duration-150" src="./Static/img/user.webp" alt="">
-                    </div>
-
-                    <div class="seller_dspt">
-                        <h1>علی سعادت</h1>
-                        <div>
-                            <span>امتیاز فروشنده:</span>
-                            <span> ۱۲۱۱۱۰</span>
-                        </div>
-                    </div>
-
-                </div>
+                <ul class="mr-4">
+                    <li>
+                        <span>نویسنده:</span>
+                        <span>جاناتان هایت</span>
+                    </li>
+                    <li>
+                        <span>قیمت جلد:</span>
+                        <span>۷۰,۰۰۰ تومان</span>
+                    </li>
+                    <li>
+                        <span>سال چاپ:</span>
+                        <span>۱۳۹۶</span>
+                    </li>
+                </ul>
 
             </div>
-
+            <article class="more_info border-b-2 py-3">
+                <h2 class="text-lg">توضیحات تکمیلی:</h2>
+                <p class="mr-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
+            </article>
+            <div class="seller py-3">
+                <div class="flex gap-3 bg-green-250 w-fit pl-7 pr-3 py-2 rounded-lg">
+                    <div class="overflow-hidden rounded-lg w-fit">
+                        <img src="./Static/img/user.webp" class="card_thumb scale-105 hover:scale-[1.15] rounded-lg" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <h1>علی سعادت</h1>
+                        <div class="point">
+                            <span>امتیاز فروشنده:</span>
+                            <span>۱۱۱۹۲</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
-
-</div>
 
 </body>
 </html>
