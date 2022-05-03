@@ -1019,6 +1019,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(96 108 56 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#606c3871\] {
+  background-color: #606c3871;
+}
+
+.bg-\[\#606c3854\] {
+  background-color: #606c3854;
+}
+
 .fill-slate-200 {
   fill: #e2e8f0;
 }
@@ -1547,6 +1555,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:bg-\[\#606c389d\]:hover {
   background-color: #606c389d;
+}
+
+.hover\:bg-green-350:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 108 56 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#606c38a4\]:hover {
+  background-color: #606c38a4;
+}
+
+.hover\:bg-\[\#606c3871\]:hover {
+  background-color: #606c3871;
+}
+
+.hover\:bg-\[\#606c389c\]:hover {
+  background-color: #606c389c;
+}
+
+.hover\:bg-\[\#606c387e\]:hover {
+  background-color: #606c387e;
 }
 
 .hover\:text-slate-600:hover {

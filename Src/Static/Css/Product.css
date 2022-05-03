@@ -1,3 +1,76 @@
+.background_ptn{
+    background: url(/Src/Static/img/low.png) #c2c5aa;
+    background-size: 35rem;
+}
+
+nav{
+    box-shadow: #18181b39 0 0 15px;  
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-family: vazir;
+}
+
+.nav-menu{
+    transform: translateY(-3px);
+}
+
+.nav-brand img{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.nav__button{
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #3c4859;
+    border: 1px solid #bfc5cd;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar__toggler__icon{
+    margin-left: 30px;
+}
+
+.burger-btn {
+    overflow: visible;
+    cursor: pointer;
+    fill: #1e272e;
+    width: 1.75rem;
+  }
+  
+  .burger-btn--1, .burger-btn--2, .burger-btn--3 {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  
+  .burger-btn.active .burger-btn--1 {
+    -webkit-transform: translate(-7px, 7px) rotate(45deg);
+            transform: translate(-7px, 7px) rotate(45deg);
+  }
+  
+  .burger-btn.active .burger-btn--2 {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    opacity: 0;
+  }
+  
+  .burger-btn.active .burger-btn--3 {
+    -webkit-transform: translate(-7px, -7px) rotate(-45deg);
+            transform: translate(-7px, -7px) rotate(-45deg);
+  }
+
+.navbar__toggler__icon:hover .nav__menu{
+    display: block;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -6,7 +79,7 @@
     width: 85%;
     display: grid;
     margin: auto;
-    margin-top: 7rem;
+    margin-top: 5rem;
     grid-template-columns: repeat(autofit, 1fr);
     box-shadow: #18181b39 0 0 40px;
     border-radius: 1rem;
@@ -55,7 +128,13 @@
     flex-direction: column;
 }
 
-
+.seller{
+    margin-top: 1rem;
+    
+}
+.seller > div{
+    box-shadow: #18181b61 0 0 40px;
+}
 
 @media(max-width: 991.98px){
     .product{
