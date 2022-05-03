@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+.product{
+    width: 85%;
+    display: grid;
+    margin: auto;
+    margin-top: 7rem;
+    grid-template-columns: repeat(autofit, 1fr);
+    box-shadow: #18181b39 0 0 40px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
 .card_thumb {
     flex-shrink: 0;
     object-fit: cover;
@@ -23,11 +37,78 @@
 
 .product_info{
     box-shadow: #18181B 0 0 40px;
-    display: block;
-    margin: auto;
-    width: 80%;
+    width: auto;
+    transform: translate(2rem, -10%);
+    -webkit-transform: translate(2rem, -10%);
+    -moz-transform: translate(2rem, -10%);
+    -ms-transform: translate(2rem, -10%);
+    -o-transform: translate(2rem, -10%);
+    grid-column: 1;
+}
+
+.product_dstp{
+    grid-column: 4;
+    padding-left: 2.5rem;
 }
 
 .container{
     flex-direction: column;
+}
+
+
+
+@media(max-width: 991.98px){
+    .product{
+        width: 95%;
+    }
+    .product_info{
+        transform: translate(1rem, -10%);
+        -webkit-transform: translate(1rem, -10%);
+        -moz-transform: translate(1rem, -10%);
+        -ms-transform: translate(1rem, -10%);
+        -o-transform: translate(1rem, -10%);
+    }
+}
+
+@media (min-width: 800px) {
+    .truncate{
+    display: block;
+    max-width: 50vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+@media(max-width: 800px){
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+    .product_info{
+        transform: translate(0, -3rem);
+        -webkit-transform: translate(0, -3rem);
+        -moz-transform: translate(0, -3rem);
+        -ms-transform: translate(0, -3rem);
+        -o-transform: translate(0, -3rem);
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    .product_dstp{
+        text-align: center;
+        padding: 0 2.5rem;
+    }
+
+    .seller{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .product_info{
+        width: 95%;
+    }
 }
