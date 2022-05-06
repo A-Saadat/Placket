@@ -13,6 +13,7 @@ module.exports = {
 
         },
         lowOpacity: "rgba(112, 112, 112, .2)",
+        lowOpacity2: "rgba(112, 112, 112, .4)",
 
         gray:{
           250: "#fffcee",
