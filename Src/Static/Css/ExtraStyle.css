@@ -348,7 +348,7 @@ nav{
     line-height: 0;
 }
 
-.custom-shape-divider-top-1647764118 svg {
+.custom-shape-divider-top-1647764118:nth-of-type(1) svg {
     position: relative;
     display: block;
     width: calc(160% + 1.3px);

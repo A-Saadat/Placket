@@ -14,6 +14,8 @@ module.exports = {
         },
         lowOpacity: "rgba(112, 112, 112, .2)",
         lowOpacity2: "rgba(112, 112, 112, .4)",
+        mainColor : "#283618",
+        sideColor : "#606c38cc",
 
         gray:{
           250: "#fffcee",
@@ -36,9 +38,13 @@ module.exports = {
         },
         light:{
           150: "#F7F6F0",
-          350: "#FEFAE0"
-        }
+          350: "#FEFAE0",
+          355: "#FEFAE09E"
+        },
+        
       },
+      
+      
 
       
 

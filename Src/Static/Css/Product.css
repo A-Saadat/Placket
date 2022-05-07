@@ -1,5 +1,5 @@
 .background_ptn{
-    background: url(/Src/Static/img/low.png) #c2c5aa;
+    background: url(../img/low.png) #c2c5aa;
     background-size: 35rem;
 }
 
@@ -147,12 +147,32 @@ nav{
     position: relative;
     display: block;
     width: calc(201% + 1.3px);
-    height: 30rem;
+    height: max-content;
     transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1651823564 .shape-fill {
     fill: #606c389d;
+}
+
+.custom-shape-divider-top-1647764118 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1647764118 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 214px;
+}
+
+.custom-shape-divider-top-1647764118 .shape-fill {
+    fill: #27272A;
 }
 
 /* ------------ Media ----------------- */

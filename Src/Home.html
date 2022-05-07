@@ -21,45 +21,47 @@
 
     <div class="bg-gray-250">
 
-      <nav class="flex items-center font-semibold bg-gray-250 py-3 z-40 relative">
+      <nav class="product_nav">
 
-        <div class="nav-brand mr-5 ml-7">
-          <img src="./Static/img/Logo2.png" alt="Placket" width="150px" class="hover:scale-105">
-        </div>
+        <ul class="flex items-center relative mx-10">
+            
+            <li class="navbar_toggler">
+                <svg class="burger-btn" width="80" height="52" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
+                    <rect class="burger-btn--2" width="40" height="6" y="10" rx="3" ry="3" />
+                    <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
+                </svg>
+            </li>
 
-        <a href="#" class="navbar__toggler__icon absolute left-0">
+            <li class="nav_input">
+                <div class="w-[30rem] flex items-center absolute right-0 top-5">
+                    <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
+                    <a href="#" class="absolute left-3 text-sm top-[13px]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </li>
 
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="30" height="30"
-            viewBox="0 0 24 24"
-            style=" fill:#000000;"><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path>
-          </svg>
+            <li class="flex items-center absolute left-0 top-4 gap-8">
+                <div class="icons gap-4">
+                    <a href="#" class="text-inherit">
+                        <i class="fa-solid fa-bell text-green-650 text-2xl" title=" اعلان ها"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-clock-rotate-left text-green-650 text-2xl " title="اخرین درخواست ها"></i>
+                    </a>
+                </div>
 
-        </a>
-
-        <ul class=" gap-x-7 align-top hidden md:flex">
-
-          <li class="">
-            <a href="#" class="text-[#313a47] hover:text-slate-600 transition-all">صفحه اصلی</a>
-          </li>
-
-          <li class="">
-            <a href="#" class="text-[#313a47] hover:text-slate-600 transition-all">ویژگی ها</a>
-          </li>
-
-          <li class="">
-            <a href="#" class="text-[#313a47] hover:text-slate-600 transition-all">صفحه آگهی ها</a>
-          </li>
+                <div class="profile flex items-center gap-3 cursor-pointer relative ">
+                    <img class="card__thumb w-[45px] h-[45px] border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
+                    <span>علی سعادت</span>
+                    <i class="fa-solid fa-chevron-down text-sm translate-y-[-2px]"></i>
+                </div>
+            </li>
 
         </ul>
-        
 
-        <a href="#" class="nav__button absolute left-0 ml-7 hidden md:flex items-center gap-x-2">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <div>ورود / ثبت نام</div>
-        </a>
-
-      </nav>
+    </nav>
 
       <section class="section-img">
 
