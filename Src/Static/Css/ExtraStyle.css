@@ -6,7 +6,7 @@
 body{
     font-family: Vazir;
     scroll-behavior: smooth;
-    background-color: #f9f9f9;
+    background-color: #f4f4e5;
     overflow-x: hidden;
 }
 
@@ -162,8 +162,8 @@ nav{
 /* -------------Property - Section2--------------- */
 
 .section-property{
-    background-color: #f9f9f9;
-    z-index: 100;
+    background-color: #f4f4e5;
+    z-index: 10;
     border-radius: 40px 40px 0 0;
     position: relative;
     top: 460px;

@@ -1,23 +1,20 @@
-'use strict';
+'use strict'
 
-const button = document.querySelector('.burger-btn');
-const dashbord = document.querySelector('.dashbord')
-const body = document.querySelector('body')
-const close_btn = document.querySelector('.close_btn')
-const blur = document.querySelector('.black_box');
 const navbar = document.querySelector('.navbar_toggler');
 const navDashbord = document.querySelector('.nav_dashbord')
+const body = document.querySelector('body')
+const blur = document.querySelector('.dark_box')
+const close_btn = document.querySelector('.close_btn')
 
 
-function menu_click(element){
-	return element.addEventListener('click', () => {
-		dashbord.classList.toggle('toggler');
-		body.classList.toggle('overflow_hidden');
-		blur.classList.toggle('blur');
-	})
+function Click(el) {
+    return el.addEventListener('click', () => {
+        navDashbord.classList.toggle('open_dashbord')
+        body.classList.toggle('overflow_hidden')
+        blur.classList.toggle('block');
+    })
 }
 
-menu_click(button);
-menu_click(close_btn);
-menu_click(blur);
-
+Click(navbar)
+Click(close_btn)
+Click(blur)

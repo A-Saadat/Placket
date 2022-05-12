@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>پلاکت | تبادل و فروش کتاب های دست دوم</title>
-    <link rel="icon" href="./Static/img/favicon.ico">
+    <link rel="icon" href="./Static/img/Fav.ico">
 
     <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./Static/Css/ExtraStyle.css">
     <link rel="stylesheet" href="./Static/Css/Card.css">
+    <link rel="stylesheet" href="./Static/Css/Nav.css">
+    <link rel="stylesheet" href="./Static/Css/menu.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 
 </head>
@@ -21,47 +23,113 @@
 
     <div class="bg-gray-250">
 
-      <nav class="product_nav">
-
-        <ul class="flex items-center relative mx-10">
-            
-            <li class="navbar_toggler">
-                <svg class="burger-btn" width="80" height="52" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
-                    <rect class="burger-btn--2" width="40" height="6" y="10" rx="3" ry="3" />
+        <nav class=" bg-[#f4f4e5] font-bold px-7 py-3 sticky top-0 z-50 shadow-md rounded-2xl text-mainColor">
+          <ul class="flex items-center nav">
+              <li class="navbar_toggler cursor-pointer">
+                  <svg class="burger-btn" width="30" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="burger-btn--1" width="30" height="6" rx="3" ry="3" />
+                    <rect class="burger-btn--2" width="35" height="6" y="10" rx="3" ry="3" />
                     <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
                 </svg>
-            </li>
+              </li>
+              <li class="logo cursor-pointer">
+                  <a class="flex items-center gap-1 select-none">
+                        <img src="./Static/img/NavbarLogo.svg" alt="${Navbar_logo}" width="45">
+                      <span class="text-[2.5rem] font-lalezar text-mainColor">پلاکت</span>
+                  </a>
+              </li>
+              <li class="search_input mr-10">
+                  <div class="search flex items-center relative">
+                      <input type="text" class="w-full placeholder:text-sm bg-[#a0a08d] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450 placeholder:font-medium" placeholder="دنبال چه کتابی میگردی؟!">
+                      <a href="#" class="absolute left-3 text-sm top-[13px]">
+                          <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
+                      </a>
+                  </div>
+              </li>
+              <li class=" xl:block hidden">
+                  <ul class="flex gap-3 mr-10">
+                      <li><a href="#">صفحه اصلی</a></li>
+                      <li><a href="#">صفحه اصلی</a></li>
+                      <li><a href="#">صفحه اصلی</a></li>
+                  </ul>
+              </li>
+              <li class="notifi flex items-center gap-6">
+                  <div class="icons gap-2">
+                      <a href="#">
+                          <i class="fa-solid fa-bell text-mainColor text-2xl" title=" اعلان ها"></i>
+                      </a>
+                      <a href="#">
+                          <i class="fa-solid fa-clock-rotate-left text-mainColor text-2xl " title="اخرین درخواست ها"></i>
+                      </a>
+                  </div>
 
-            <li class="nav_input">
-                <div class="w-[30rem] flex items-center absolute right-0 top-5">
-                    <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
-                    <a href="#" class="absolute left-3 text-sm top-[13px]">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                  <div class="profile flex items-center gap-3 cursor-pointer relative ">
+                      <img class="card_thumb w-[45px] h-[45px] border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
+                      <span>علی سعادت</span>
+                      <i class="fa-solid fa-chevron-down text-sm translate-y-[-2px]"></i>
+                  </div>
+              </li>
+          </ul>
+        </nav>
+
+        <div class="dark_box"></div>
+
+        <div class="nav_dashbord bg-[#283618] p-7">
+
+            <div class="sidebar_logo flex items-center gap-1 justify-center transition-all duration-150 mb-10">
+                <img src="./Static/img/logo_Simple2.png" alt="" width="45">
+                <span class="font-lalezar text-4xl text-gray-250 logo">پلاکت</span>
+                <i class="fa-solid fa-xmark close_btn"></i>
+            </div>
+
+            <ul class="flex gap-y-3 flex-col">
+                
+                <li class="dashbord_input border-b-2 border-lowOpacity pb-5">
+                    <div class="flex items-center relative">
+                        <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
+                    </div>
+                </li>
+
+                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                        <i class="fa-solid fa-house scale-110"></i>
+                        <span class="item">صفحه اصلی</span>
                     </a>
-                </div>
-            </li>
+                </li>
 
-            <li class="flex items-center absolute left-0 top-4 gap-8">
-                <div class="icons gap-4">
-                    <a href="#" class="text-inherit">
-                        <i class="fa-solid fa-bell text-green-650 text-2xl" title=" اعلان ها"></i>
+                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                        <i class="fa-solid fa-house scale-110"></i>
+                        <span class="item">صفحه اصلی</span>
                     </a>
-                    <a href="#">
-                        <i class="fa-solid fa-clock-rotate-left text-green-650 text-2xl " title="اخرین درخواست ها"></i>
+                </li>
+
+                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                        <i class="fa-solid fa-house scale-110"></i>
+                        <span class="item">صفحه اصلی</span>
                     </a>
-                </div>
+                </li>
 
-                <div class="profile flex items-center gap-3 cursor-pointer relative ">
-                    <img class="card__thumb w-[45px] h-[45px] border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
-                    <span>علی سعادت</span>
-                    <i class="fa-solid fa-chevron-down text-sm translate-y-[-2px]"></i>
-                </div>
-            </li>
+                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                        <i class="fa-solid fa-house scale-110"></i>
+                        <span class="item">صفحه اصلی</span>
+                    </a>
+                </li>
 
-        </ul>
+                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                        <i class="fa-solid fa-house scale-110"></i>
+                        <span class="item">صفحه اصلی</span>
+                    </a>
+                </li>
 
-    </nav>
+                
+
+            </ul>
+
+        </div>
 
       <section class="section-img">
 
@@ -540,6 +608,8 @@
     </div>
 
     </footer>
+
+    <script src="./Static/Js/Main.js"></script>
 
 </body>
 </html>

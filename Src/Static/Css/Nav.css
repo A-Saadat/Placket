@@ -20,6 +20,10 @@ body{
     overflow: hidden;
 }
 
+nav ul{
+    transform: translateY(-.15rem);
+}
+
 input:focus,
 input:focus-within{
     outline: 0;
@@ -38,10 +42,12 @@ input:focus-within{
 }
 
 nav{
-    width: 95%;
     display: block;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: .25rem;
+    z-index: 10;
+    background: #fdfdef;
+    padding: .75rem 2rem;
 }
 
 nav li:nth-of-type(4){
@@ -84,6 +90,14 @@ nav li:nth-of-type(4){
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.burger-btn{
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
 }
 
 .close_btn{
