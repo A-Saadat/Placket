@@ -25,7 +25,7 @@
 
         <nav class=" bg-[#f4f4e5] font-bold px-7 py-3 sticky top-0 z-50 shadow-md rounded-2xl text-mainColor">
           <ul class="flex items-center nav">
-              <li class="navbar_toggler cursor-pointer">
+              <li class="navbar_toggler lg:ml-6 cursor-pointer">
                   <svg class="burger-btn" width="30" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
                     <rect class="burger-btn--1" width="30" height="6" rx="3" ry="3" />
                     <rect class="burger-btn--2" width="35" height="6" y="10" rx="3" ry="3" />
@@ -47,10 +47,10 @@
                   </div>
               </li>
               <li class=" xl:block hidden">
-                  <ul class="flex gap-3 mr-10">
-                      <li><a href="#">صفحه اصلی</a></li>
-                      <li><a href="#">صفحه اصلی</a></li>
-                      <li><a href="#">صفحه اصلی</a></li>
+                  <ul class="flex gap-5 mr-10">
+                      <li><a href="#Category">دسته بندی ها</a></li>
+                      <li><a href="#Ads">آگهی ها</a></li>
+                      <li><a href="#ContactUs">ارتباط با ما</a></li>
                   </ul>
               </li>
               <li class="notifi flex items-center gap-6">
@@ -82,7 +82,7 @@
                 <i class="fa-solid fa-xmark close_btn"></i>
             </div>
 
-            <ul class="flex gap-y-3 flex-col">
+            <ul class="flex gap-y-3 flex-col ">
                 
                 <li class="dashbord_input border-b-2 border-lowOpacity pb-5">
                     <div class="flex items-center relative">
@@ -90,39 +90,37 @@
                     </div>
                 </li>
 
-                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
-                        <i class="fa-solid fa-house scale-110"></i>
-                        <span class="item">صفحه اصلی</span>
-                    </a>
-                </li>
+                <li>
+                  <ul class="overflow-y-scroll h-64 customScroll scroll-px-4">
+                    <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                      <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                          <i class="fa-solid fa-house scale-110"></i>
+                          <span class="item"> ایجاد آگهی جدید</span>
+                      </a>
+                  </li>
+  
+                  <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                      <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                          <i class="fa-solid fa-house scale-110"></i>
+                          <span class="item">وضعیت درخواست ها</span>
+                      </a>
+                  </li>
+  
+                  <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                      <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                          <i class="fa-solid fa-house scale-110"></i>
+                          <span class="item"></span>
+                      </a>
+                  </li>
+  
+                  <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                      <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                          <i class="fa-solid fa-house scale-110"></i>
+                          <span class="item">صفحات مختلف</span>
+                      </a>
+                  </li>
 
-                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
-                        <i class="fa-solid fa-house scale-110"></i>
-                        <span class="item">صفحه اصلی</span>
-                    </a>
-                </li>
-
-                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
-                        <i class="fa-solid fa-house scale-110"></i>
-                        <span class="item">صفحه اصلی</span>
-                    </a>
-                </li>
-
-                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
-                        <i class="fa-solid fa-house scale-110"></i>
-                        <span class="item">صفحه اصلی</span>
-                    </a>
-                </li>
-
-                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
-                    <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
-                        <i class="fa-solid fa-house scale-110"></i>
-                        <span class="item">صفحه اصلی</span>
-                    </a>
+                  </ul>
                 </li>
 
                 
@@ -251,7 +249,7 @@
 
       <section class="relative types pt-4 sm:translate-y-[25rem] translate-y-[19rem] h-fit pb-16 rounded-b-[40px] bg-gray-250">
           
-        <h2 class="text-center font-[lalezar] text-[1.75rem] ">چه کتابایی میخونی؟</h2>
+        <h2 class="text-center font-[lalezar] text-[1.75rem] " id="Category">چه کتابایی میخونی؟</h2>
 
         <div class="flex flex-wrap gap-x-10 gap-y-5 justify-center mt-10 mx-10 md:mx-0">
 
@@ -292,7 +290,7 @@
           </div>
         </div>
     
-        <div class="flex flex-wrap gap-x-10 gap-y-5 justify-center mt-6 mx-10 md:mx-0">
+        <div class="flex flex-wrap gap-x-10 gap-y-5 justify-center mt-6 mx-10 md:mx-0" >
 
             <div class="w-full md:w-auto xl:w-1/3 px-6 py-3 text-center rounded-xl text-gray-50 customgrayboxShadow hover:scale-[1.05] transition-all">
               <h1 class="font-[lalezar] pb-2 text-xl">درسی</h1>
@@ -338,9 +336,11 @@
             پس از اهدای کتاب، امتیازاتی در ثبت آگهی به شما تعلق 
             میگیرد.</p>
         </div>
-  
-      <div class=" sm:w-[90%] md:w-1/3 md:m-0 m-auto flex hover:scale-[1.05] transition-all">
-          <img src="./Static/img/pexels-cottonbro-6157222.jpg" class=" rounded-3xl" alt="">
+        
+        <div class="overflow-hidden sm:w-[90%] md:w-1/3 rounded-3xl md:m-0 m-auto">
+          <div class="   flex hover:scale-110 transition-all overflow-hidden">
+            <img src="./Static/img/pexels-cottonbro-6157222.jpg" class=" rounded-3xl object-cover overflow-hidden" alt="">
+          </div>
         </div>
       </div>
 
@@ -358,8 +358,10 @@
           </p>
         </div>
   
-      <div class=" sm:w-[90%] md:w-1/3 md:m-0 m-auto flex hover:scale-[1.05] transition-all overflow-hidden rounded-3xl">
-          <img src="./Static/img/Exchange.jpg" class="overflow-hidden rounded-3xl" alt="">
+        <div class="overflow-hidden sm:w-[90%] md:w-1/3 rounded-3xl md:m-0 m-auto">
+          <div class="   flex hover:scale-110 transition-all overflow-hidden">
+            <img src="./Static/img/Exchange.jpg" class=" rounded-3xl object-cover overflow-hidden" alt="">
+          </div>
         </div>
       </div>
 
@@ -367,7 +369,7 @@
 
     <div class="translate-y-[460px] haveBg pb-[4.4rem]">
 
-        <section class="relative mb-4">
+        <section class="relative mb-4" id="Ads">
           <div class="custom-shape-divider-top-1647409516 bg-[#57534E] h-[100vh]">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -459,7 +461,7 @@
     
         <hr>
     
-        <section class="contact__bg mx-2 sm:mx-10 lg:mx-32 p-10 rounded-3xl mt-52 translate-y-4 lg:translate-y-0">
+        <section class="contact__bg mx-2 sm:mx-10 lg:mx-32 p-10 rounded-3xl mt-52 translate-y-4 lg:translate-y-0" id="ContactUs">
     
           <div>
             <h1 class="text-white text-3xl font-semibold font-[lalezar] text-center">با ما در ارتباط باش!</h1>
@@ -525,7 +527,7 @@
             </div>
     
             <div class="text-center translate-y-[-3.2rem]">
-              <a href="#" class="w-fit bg-zinc-700 hover:bg-zinc-600 transition-colors text-gray-200 focus:ring-4 ring-zinc-900 mb-2 font-semibold px-10 py-2 rounded-xl">ارسال پیام</a>
+              <a href="#" class="w-fit bg-[#4A5F5F] transition-colors text-gray-200 focus:ring-4 ring-[#385a5a49] mb-2 font-semibold px-10 py-3 rounded-lg">ارسال پیام</a>
             </div>
     
           </div>
@@ -542,7 +544,7 @@
         </svg>
       </div>
 
-    <div class="bg-zinc-800 translate-y-52 h-fit px-12 pt-10 pb-28 " style="direction: rtl;">
+    <div class="bg-[#31362b] translate-y-52 h-fit px-12 pt-10 pb-28 " style="direction: rtl;">
 
       <div class="flex items-center flex-col lg:flex-row">
 

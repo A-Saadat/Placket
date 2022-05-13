@@ -3,9 +3,13 @@
   --curve: 40;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     font-family: Vazir;
-    scroll-behavior: smooth;
+    
     background-color: #f4f4e5;
     overflow-x: hidden;
 }
@@ -310,7 +314,8 @@ nav{
     overflow: hidden;
     line-height: 0;
     background: url(../img/icon-background.png);
-    background: url(../img/low.png) repeat, linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(87,83,78,1) 28%, rgba(255,252,238,1) 100%);
+    background: url(../img/low.png) repeat, linear-gradient(180deg,
+    #22251e 6%, #444c3c 20%, #a0a08d 80%, #fefae0 100%);
     background-size: 500px;
 }
 
@@ -332,7 +337,7 @@ nav{
 }
 
 .custom-shape-divider-top-1647409516 .shape-fill {
-    fill: #fffcee;
+    fill: #fefae0;
 }
 
 /* --------------------color-------------------------- */
@@ -356,7 +361,7 @@ nav{
 }
 
 .custom-shape-divider-top-1647764118 .shape-fill {
-    fill: #27272A;
+    fill: #31362b;
 }
 
 /* -------------------footer-------------------------- */
@@ -501,14 +506,25 @@ nav{
 
 
 .box1{
-    background-color: #2c2c31;
-    border: 2px solid ;
+    background-color: #283618b7;
+    box-shadow: 
+      rgba(0, 0, 0, 0.07) 0px 1px 2px,
+      rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px,
+      rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px,
+      rgba(0, 0, 0, 0.07) 0px 32px 64px;
     width: fit-content;
     padding: 1rem;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
 }
 
 .box1:hover{
-    background-color: #323238;
+    background-color: #1e2912;
 }
 
 .form__control{
@@ -524,14 +540,30 @@ textarea:focus{
 }
 
 .contact{
-    background-color: #18181baf;
+    background-color: #1e29127b;
+    box-shadow: 
+      rgba(0, 0, 0, 0.07) 0px 1px 2px,
+      rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px,
+      rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px,
+      rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .contact__bg{
-    background: url(../img/low.png), #323238;
+  background: url(../img/low.png) repeat, 
+  linear-gradient(45deg, #3a4949 6%,
+  #68685c 40%,
+  #22251e 100%);
     background-size: 100rem;
 }
 
+
+/* ================================tmp======================== */
+textarea{ 
+  max-width: 220px;
+}
+/* ================================tmp======================== */
 
 lable{
     color: white;

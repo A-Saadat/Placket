@@ -6,7 +6,7 @@ body{
     background-color: #1e272ecb;
     height: 100vh;
     z-index: 100;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: none;
@@ -66,12 +66,29 @@ nav li:nth-of-type(4){
     justify-content: space-between;
 }
 
-.navbar_toggler{
-    display: none;
+.customScroll{
+    scrollbar-width: thin;
+    scrollbar-track-color: aqua;
 }
+
+.customScroll::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.customScroll::-webkit-scrollbar-track{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+
 .nav_dashbord{
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
     transform: translateX(120%);
@@ -93,11 +110,7 @@ nav li:nth-of-type(4){
 }
 
 .burger-btn{
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+    width: 30px;
 }
 
 .close_btn{
@@ -125,7 +138,7 @@ nav li:nth-of-type(4){
     
 }
 
-@media (max-width: 820.98px) {
+@media (max-width: 840.98px) {
     .icons, .search_input, .profile span, .profile i{
         display: none;
     }
