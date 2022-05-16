@@ -9,10 +9,10 @@ html{
 
 body{
     font-family: Vazir;
-    
     background-color: #f4f4e5;
-    overflow-x: hidden;
 }
+
+ 
 
 input:focus,
 textarea:focus{
@@ -337,7 +337,7 @@ nav{
 }
 
 .custom-shape-divider-top-1647409516 .shape-fill {
-    fill: #fefae0;
+    fill: #f4f4e5;
 }
 
 /* --------------------color-------------------------- */
@@ -389,6 +389,33 @@ nav{
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
 }
+
+.swiper{
+  overflow: unset !important;
+}
+
+.swiper-pagination{
+  transform: translateY(3.5rem) !important;
+  -webkit-transform: translateY(3.5rem) !important;
+  -moz-transform: translateY(3.5rem) !important;
+  -ms-transform: translateY(3.5rem) !important;
+  -o-transform: translateY(3.5rem) !important;
+}
+
+.swiper-pagination-bullet{
+  background: #4f6069 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #333d29 !important;
+}
+
+.swiper-slide{
+  width: 25%;
+  margin:0 1rem ;
+}
+
+
 
 /* --------------------categories-------------------------- */
 
