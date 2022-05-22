@@ -51,7 +51,6 @@ module.exports = {
       fontFamily:{
         vazir : "Vazir",
         lalezar : "Lalezar",
-        YekanBakh : "Yekan Bakh"
       }
 
     },

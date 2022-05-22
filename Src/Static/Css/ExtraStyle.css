@@ -1,5 +1,5 @@
 :root {
-  --surface-color: #fff;
+  --surface-color: #F4F4E5;
   --curve: 40;
 }
 
@@ -337,7 +337,7 @@ nav{
 }
 
 .custom-shape-divider-top-1647409516 .shape-fill {
-    fill: #f4f4e5;
+    fill: #fffcee;
 }
 
 /* --------------------color-------------------------- */
@@ -507,7 +507,7 @@ nav{
   }
 
   .truncate {
-      width: 250px;
+    width: 18pc;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -582,7 +582,7 @@ textarea:focus{
   linear-gradient(45deg, #3a4949 6%,
   #68685c 40%,
   #22251e 100%);
-    background-size: 100rem;
+  background-size: 100rem;
 }
 
 

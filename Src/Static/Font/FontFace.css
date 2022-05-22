@@ -1,0 +1,37 @@
+@font-face {
+     font-family: 'Vazir';
+     src: url('Font-file/Vazir-Light.eot'); /* IE9 Compat Modes */
+     src: url('Font-file/Vazir-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('Font-file/Vazir-Medium.woff') format('woff'), /* Modern Browsers */
+          url('Font-file/Vazir-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+     font-weight: 500;
+}
+@font-face {
+     font-family: 'Vazir';
+     src: url('Font-file/Vazir-Bold.eot'); /* IE9 Compat Modes */
+     src: url('Font-file/Vazir-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('Font-file/Vazir-Bold.woff') format('woff'), /* Modern Browsers */
+          url('Font-file/Vazir-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+     font-weight: 700;
+}
+@font-face {
+     font-family: 'Vazir';
+     src: url('Font-file/Vazir-Thin.eot'); /* IE9 Compat Modes */
+     src: url('Font-file/Vazir-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('Font-file/Vazir-Thin.woff') format('woff'), /* Modern Browsers */
+          url('Font-file/Vazir-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+     font-weight: 100;
+}
+@font-face {
+     font-family: 'Vazir';
+     src: url('Font-file/Vazir-Light.eot'); /* IE9 Compat Modes */
+     src: url('Font-file/Vazir-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('Font-file/Vazir-Light.woff') format('woff'), /* Modern Browsers */
+          url('Font-file/Vazir-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+     font-weight: 500;
+}
+@font-face {
+     font-family: "Lalezar";
+     src: url("Font-file/Lalezar-Regular.ttf");
+     font-style: normal;
+}
