@@ -17,6 +17,12 @@ module.exports = {
         mainColor : "#283618",
         sideColor : "#606c38cc",
 
+        TitleColor: "hsl(90,20%,20%)",
+        DstpColor: "hsl(201,14%,36%)",
+        primeryColor: "hsl(88,14%,27%)",
+        AccentColor: "hsl(67,19%,72%)",
+        BgColor: "hsl(49,100%,97%)",
+
         gray:{
           250: "#fffcee",
           550: "#4f6069",

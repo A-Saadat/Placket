@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,103 @@
 
     <link rel="stylesheet" href="./Static/Css/Nav_Card.css">
     <link rel="stylesheet" href="./Static/Css/UserPanel.css">
+    <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
-<body>
+<body class="font-vazir">
     
+    <div class="flex">
+
+        <div class="content">
+            <nav class="w-full flex justify-between mx-5 mt-3">
+                <div class="welcome">
+                    <h1 class="font-lalezar text-2xl md:text-3xl text-TitleColor">
+                        سلام
+                        <span>علی</span>
+                        خوش اومدی!
+                    </h1>
+                    <p class="text-DstpColor font-semibold md:text-base text-sm">اینجا میتونی اگهی ها و درخواست هات رو اینجا مدیریت کنی!</p>
+                </div>
+                <ul class="panel_nav flex items-center gap-10">
+
+                    <li class=" flex items-center relative">
+                        <input type="text" class="lg:w-96 md:w-72 max-w-full placeholder:text-sm bg-AccentColor text-TitleColor placeholder:text-TitleColor p-2 rounded-lg focus:ring-[3px] transition-all duration-150 ring-green-450 placeholder:font-medium" placeholder="دنبال چه کتابی میگردی؟!">
+                        <a href="#" class="absolute left-3 text-sm top-[13px]">
+                            <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
+                        </a>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <i class="fa fa-plus text-2xl text-primeryColor"></i>
+                        <span class="font-semibold text-base">ایجاد آگهی</span>
+                    </li>
+
+                    <li href="#" class="relative">
+                        <i class="fa fa-bell text-2xl text-primeryColor"></i>
+                        <i class="fa fa-circle absolute left-[10px] top-[3px] text-[10px] text-AccentColor"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="edit_profile w-fit fixed left-0 flex flex-col items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
+            <div class="border-b-2 border-lowOpacity2 py-3 mb-5">
+                <div class="userbg w-[19rem] h-36 relative">
+                    <img src="./Static/img/User_defBg.png" class="rounded-2xl w-[19rem] h-48 object-cover" alt="">
+                    <i class="fa fa-user-edit cursor-pointer absolute top-2 left-4 text-2xl text-primeryColor"></i>
+                </div>
+                <div class="userInfo_Edit flex">
+                        <div class=" overflow-hidden w-20 h-20 rounded-full relative -translate-x-5">
+                        <img src="./Static/img/user.png" class="card_thumb w-20 h-20 hover:scale-105 hover:rotate-12 transition-all duration-150" alt="">
+                    </div>
+                    <div class="self-end mr-7 text-AccentColor">
+                        <h1 class="mt-14  text-2xl font-lalezar" contenteditable="true">علی سعادت</h1>
+                        <p class="font-medium mr-4">رتبه: معمولی</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+                <ul class="flex shadow-lg w-fit mx-7 items-center gap-4 bg-AccentColor p-3 rounded-lg text-primeryColor">
+                    <li class="text-xl">۱</li>
+                    <li class="w-16 h-12 overflow-hidden rounded-lg">
+                        <img src="./Static/img/Melat.jpg" class="w-16 h-12 rounded-lg hover:scale-105 object-cover transition-all duration-150" alt="">
+                    </li>
+                    <li class="font-semibold">ملت عشق</li>
+                    <li class="mr-10"><i class="fa fa-arrow-left text-xl text-BgColor b bg-primeryColor px-3 py-1 rounded-lg cursor-pointer"></i></li>
+                </ul>
+                <ul class="flex shadow-lg w-fit mx-7 items-center gap-4 bg-AccentColor p-3 rounded-lg text-primeryColor">
+                    <li class="text-xl">۱</li>
+                    <li class="w-16 h-12 overflow-hidden rounded-lg">
+                        <img src="./Static/img/Melat.jpg" class="w-16 h-12 rounded-lg hover:scale-105 object-cover transition-all duration-150" alt="">
+                    </li>
+                    <li class="font-semibold">ملت عشق</li>
+                    <li class="mr-10"><i class="fa fa-arrow-left text-xl text-BgColor b bg-primeryColor px-3 py-1 rounded-lg cursor-pointer"></i></li>
+                </ul>
+                <ul class="flex shadow-lg w-fit mx-7 items-center gap-4 bg-AccentColor p-3 rounded-lg text-primeryColor">
+                    <li class="text-xl">۱</li>
+                    <li class="w-16 h-12 overflow-hidden rounded-lg">
+                        <img src="./Static/img/Melat.jpg" class="w-16 h-12 rounded-lg hover:scale-105 object-cover transition-all duration-150" alt="">
+                    </li>
+                    <li class="font-semibold">ملت عشق</li>
+                    <li class="mr-10"><i class="fa fa-arrow-left text-xl text-BgColor b bg-primeryColor px-3 py-1 rounded-lg cursor-pointer"></i></li>
+                </ul>
+                <ul class="flex shadow-lg w-fit mx-7 items-center gap-4 bg-AccentColor p-3 rounded-lg text-primeryColor">
+                    <li class="text-xl">۱</li>
+                    <li class="w-16 h-12 overflow-hidden rounded-lg">
+                        <img src="./Static/img/Melat.jpg" class="w-16 h-12 rounded-lg hover:scale-105 object-cover transition-all duration-150" alt="">
+                    </li>
+                    <li class="font-semibold">ملت عشق</li>
+                    <li class="mr-10"><i class="fa fa-arrow-left text-xl text-BgColor b bg-primeryColor px-3 py-1 rounded-lg cursor-pointer"></i></li>
+                </ul>
+                <ul class="flex shadow-lg w-fit mx-7 items-center gap-4 bg-AccentColor p-3 rounded-lg text-primeryColor">
+                    <li class="text-xl">۱</li>
+                    <li class="w-16 h-12 overflow-hidden rounded-lg">
+                        <img src="./Static/img/Melat.jpg" class="w-16 h-12 rounded-lg hover:scale-105 object-cover transition-all duration-150" alt="">
+                    </li>
+                    <li class="font-semibold">ملت عشق</li>
+                    <li class="mr-10"><i class="fa fa-arrow-left text-xl text-BgColor b bg-primeryColor px-3 py-1 rounded-lg cursor-pointer"></i></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
