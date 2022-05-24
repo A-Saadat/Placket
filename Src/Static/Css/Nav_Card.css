@@ -296,6 +296,10 @@ input:focus-within{
     cursor: pointer;
 }
 
+.customShadow{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
 .open_mainDashbord{
     transform: translateX(0);
     -webkit-transform: translateX(0);

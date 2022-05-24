@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./Static/Css/UserPanel.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
-<body class="font-vazir">
+<body class="font-vazir bg-BgColor">
     
-    <div class="flex">
+    <div class="flex justify-between">
 
         <div class="content">
-            <nav class="w-full flex justify-between mx-5 mt-3">
+            <nav class="w-2/3 lg:w-full flex justify-between mx-5 mt-3">
                 <div class="welcome">
                     <h1 class="font-lalezar text-2xl md:text-3xl text-TitleColor">
                         سلام
@@ -47,8 +47,106 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="request mt-7 mr-5 border-b-2 pb-6">
+                <div class="flex items-center gap-3">
+                    <i class="fa fa-circle text-[7px] text-AccentColor"></i>
+                    <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">درخواست ها</h1>
+                </div>
+                
+                <div class="flex gap-5 mt-5">
+                    <div class="customShadow flex gap-3 bg-AccentColor w-fit p-3 rounded-xl">
+                        <div class="req_img w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden shadow-md">
+                            <img src="./Static/img/The Righteous mind.webp" class="filter contrast-125 w-[5.5rem] h-[5.5rem] rounded-lg hover:scale-105 duration-150 transition-all object-cover" alt="">
+                        </div>
+                        <div class="req_dstp flex flex-col justify-around">
+                            <h1 class="font-lalezar text-xl text-TitleColor">ذهن درستکار</h1>
+                            <div class="flex gap-2 font-medium text-DstpColor">
+                                <h3>قیمت پیشنهادی:</h3>
+                                <span class="flex gap-1">
+                                    <span>۶۲,۰۰۰</span>
+                                    <span class="self-end text-sm">تومان</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customShadow flex gap-3 bg-AccentColor w-fit p-3 rounded-xl">
+                        <div class="req_img w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden shadow-md">
+                            <img src="./Static/img/The Righteous mind.webp" class="filter contrast-125 w-[5.5rem] h-[5.5rem] rounded-lg hover:scale-105 duration-150 transition-all object-cover" alt="">
+                        </div>
+                        <div class="req_dstp flex flex-col justify-around">
+                            <h1 class="font-lalezar text-xl text-TitleColor">ذهن درستکار</h1>
+                            <div class="flex gap-2 font-medium text-DstpColor">
+                                <h3>قیمت پیشنهادی:</h3>
+                                <span class="flex gap-1">
+                                    <span>۶۲,۰۰۰</span>
+                                    <span class="self-end text-sm">تومان</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customShadow flex gap-3 bg-AccentColor w-fit p-3 rounded-xl">
+                        <div class="req_img w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden shadow-md">
+                            <img src="./Static/img/The Righteous mind.webp" class="filter contrast-125 w-[5.5rem] h-[5.5rem] rounded-lg hover:scale-105 duration-150 transition-all object-cover" alt="">
+                        </div>
+                        <div class="req_dstp flex flex-col justify-around">
+                            <h1 class="font-lalezar text-xl text-TitleColor">ذهن درستکار</h1>
+                            <div class="flex gap-2 font-medium text-DstpColor">
+                                <h3>قیمت پیشنهادی:</h3>
+                                <span class="flex gap-1">
+                                    <span>۶۲,۰۰۰</span>
+                                    <span class="self-end text-sm">تومان</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="last_ad my-5 mr-5">
+                <div class="flex items-center gap-3">
+                    <i class="fa fa-circle text-[7px] text-AccentColor"></i>
+                    <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">اخرین آگهی های ثبت شده</h1>
+                </div>
+                <div class="mt-5 flex gap-5">
+                    <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                        <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                            <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                        </div>
+                        <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                            <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                            <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                        </div>
+                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md font-medium">مشاهده آگهی</button>
+                    </div>
+                    <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                        <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                            <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                        </div>
+                        <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                            <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                            <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                        </div>
+                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md font-medium">مشاهده آگهی</button>
+                    </div>
+                    <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                        <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                            <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                        </div>
+                        <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                            <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                            <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                        </div>
+                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md font-medium">مشاهده آگهی</button>
+                    </div>
+                </div>
+            </div>
+            
+
         </div>
-        <div class="edit_profile w-fit fixed left-0 flex flex-col items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
+        <div class="edit_profile w-fit flex flex-col items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
             <div class="border-b-2 border-lowOpacity2 py-3 mb-5">
                 <div class="userbg w-[19rem] h-36 relative">
                     <img src="./Static/img/User_defBg.png" class="rounded-2xl w-[19rem] h-48 object-cover" alt="">
@@ -109,5 +207,15 @@
         </div>
 
     </div>
+
+    <script src="./Static/Js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+      });
+    </script>
+
+</div>
 </body>
 </html>
