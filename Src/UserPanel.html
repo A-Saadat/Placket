@@ -15,10 +15,10 @@
 </head>
 <body class="font-vazir bg-BgColor">
     
-    <div class="flex justify-between">
+    <div class="Customgrid">
 
         <div class="content">
-            <nav class="w-2/3 lg:w-full flex justify-between mx-5 mt-3">
+            <nav class=" flex justify-between mx-5 mt-3">
                 <div class="welcome">
                     <h1 class="font-lalezar text-2xl md:text-3xl text-TitleColor">
                         سلام
@@ -27,10 +27,10 @@
                     </h1>
                     <p class="text-DstpColor font-semibold md:text-base text-sm">اینجا میتونی اگهی ها و درخواست هات رو اینجا مدیریت کنی!</p>
                 </div>
-                <ul class="panel_nav flex items-center gap-10">
+                <ul class="panel_nav flex items-center gap-7 translate-y-[10%]">
 
                     <li class=" flex items-center relative">
-                        <input type="text" class="lg:w-96 md:w-72 max-w-full placeholder:text-sm bg-AccentColor text-TitleColor placeholder:text-TitleColor p-2 rounded-lg focus:ring-[3px] transition-all duration-150 ring-green-450 placeholder:font-medium" placeholder="دنبال چه کتابی میگردی؟!">
+                        <input type="text" class="xl:w-[21rem] w-48 placeholder:text-sm bg-AccentColor text-TitleColor placeholder:text-TitleColor p-2 rounded-lg focus:ring-[3px] transition-all duration-150 ring-green-450 placeholder:font-medium" placeholder="دنبال چه کتابی میگردی؟!">
                         <a href="#" class="absolute left-3 text-sm top-[13px]">
                             <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
                         </a>
@@ -41,7 +41,7 @@
                         <span class="font-semibold text-base">ایجاد آگهی</span>
                     </li>
 
-                    <li href="#" class="relative">
+                    <li href="#" class="block relative">
                         <i class="fa fa-bell text-2xl text-primeryColor"></i>
                         <i class="fa fa-circle absolute left-[10px] top-[3px] text-[10px] text-AccentColor"></i>
                     </li>
@@ -111,42 +111,75 @@
                     <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">اخرین آگهی های ثبت شده</h1>
                 </div>
                 <div class="mt-5 flex gap-5">
-                    <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
-                        <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
-                            <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide customslide">
+                            <div class="w-fit bg-AccentColor p-4 rounded-lg">
+                            <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                                <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                            </div>
+                            <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                                <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                                <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                            </div>
+                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide customslide">
+                            <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                            <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                                <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                            </div>
+                            <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                                <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                                <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                            </div>
+                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide customslide">
+                            <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                            <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                                <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                            </div>
+                            <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                                <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                                <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                            </div>
+                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide customslide">
+                            <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                            <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                                <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                            </div>
+                            <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                                <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                                <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                            </div>
+                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            </div>
+                          </div>
+                          <div class="swiper-slide customslide">
+                            <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
+                            <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
+                                <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
+                            </div>
+                            <div class="ad_dstp mt-3 flex flex-col items-center text-center">
+                                <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
+                                <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
+                            </div>
+                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="ad_dstp mt-3 flex flex-col items-center text-center">
-                            <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
-                            <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
-                        </div>
-                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md font-medium">مشاهده آگهی</button>
-                    </div>
-                    <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
-                        <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
-                            <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
-                        </div>
-                        <div class="ad_dstp mt-3 flex flex-col items-center text-center">
-                            <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
-                            <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
-                        </div>
-                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md font-medium">مشاهده آگهی</button>
-                    </div>
-                    <div class="ad_card w-fit bg-AccentColor p-4 rounded-lg">
-                        <div class="ad_img w-64 h-44 rounded-lg overflow-hidden">
-                            <img src="./Static/img/Melat.jpg" class="w-72 h-44 object-cover rounded-lg hover:scale-105 transition-all duration-150" alt="${book}">
-                        </div>
-                        <div class="ad_dstp mt-3 flex flex-col items-center text-center">
-                            <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
-                            <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
-                        </div>
-                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md font-medium">مشاهده آگهی</button>
-                    </div>
-                </div>
+                      </div>
             </div>
-            
+            </div>
 
         </div>
-        <div class="edit_profile w-fit flex flex-col items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
+        <div class="UserProfile w-fit flex flex-col sticky top-0 items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
             <div class="border-b-2 border-lowOpacity2 py-3 mb-5">
                 <div class="userbg w-[19rem] h-36 relative">
                     <img src="./Static/img/User_defBg.png" class="rounded-2xl w-[19rem] h-48 object-cover" alt="">
@@ -212,7 +245,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
         watchSlidesProgress: true,
-        slidesPerView: 3,
+        slidesPerView: 'auto'
       });
     </script>
 

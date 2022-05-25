@@ -1,3 +1,19 @@
-.reqs::-webkit-scrollbar{
-    display: none;
+.Customgrid{
+    display: grid;
+    grid-template-columns: 3fr auto;
+}
+
+.customslide{
+    width: fit-content !important;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.mySwiper{
+    width: 70vw !important; 
+    height: auto !important;
+}
+
+.swiper-wrapper{
+    display: flex !important;
+    gap: 1rem !important;
 }
