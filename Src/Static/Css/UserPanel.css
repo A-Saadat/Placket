@@ -1,6 +1,6 @@
 .Customgrid{
     display: grid;
-    grid-template-columns: 3fr auto;
+    grid-template-columns: 4fr auto;
 }
 
 .customslide{
@@ -16,4 +16,22 @@
 .swiper-wrapper{
     display: flex !important;
     gap: 1rem !important;
+}
+
+.custom_Grid{
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    grid-gap: 1rem !important;
+}
+
+@media screen and (max-width: 1140px){
+    .UserProfile{
+        position: absolute !important;
+        left: 0;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
 }
