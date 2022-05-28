@@ -867,20 +867,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 12rem;
 }
 
-.w-\[5\.5rem\] {
-  width: 5.5rem;
-}
-
-.w-64 {
-  width: 16rem;
+.w-1\/3 {
+  width: 33.333333%;
 }
 
 .w-72 {
   width: 18rem;
-}
-
-.w-\[19rem\] {
-  width: 19rem;
 }
 
 .w-20 {
@@ -889,14 +881,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-16 {
   width: 4rem;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .translate-y-\[-2px\] {
@@ -1009,6 +993,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .scroll-px-4 {
   scroll-padding-left: 1rem;
   scroll-padding-right: 1rem;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-row-reverse {
@@ -1366,6 +1354,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-primeryColor {
   --tw-bg-opacity: 1;
   background-color: hsl(88 14% 27% / var(--tw-bg-opacity));
+}
+
+.bg-TitleColor {
+  --tw-bg-opacity: 1;
+  background-color: hsl(90 20% 20% / var(--tw-bg-opacity));
 }
 
 .fill-slate-200 {
@@ -1795,6 +1788,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-none {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-primeryColor {
+  --tw-shadow-color: hsl(88,14%,27%);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .ring-green-450 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(70 79 60 / var(--tw-ring-opacity));
@@ -2017,6 +2038,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: #606c387e;
 }
 
+.hover\:bg-AccentColor:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(67 19% 72% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-TitleColor:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(90 20% 20% / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[blanchedalmond\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 235 205 / var(--tw-text-opacity));
@@ -2025,6 +2056,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-slate-600:hover {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.hover\:text-TitleColor:hover {
+  --tw-text-opacity: 1;
+  color: hsl(90 20% 20% / var(--tw-text-opacity));
+}
+
+.hover\:text-AccentColor:hover {
+  --tw-text-opacity: 1;
+  color: hsl(67 19% 72% / var(--tw-text-opacity));
+}
+
+.hover\:shadow-none:hover {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-sm:hover {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:ring-4:focus {
@@ -2124,6 +2177,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2140,8 +2198,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 7rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-1\/2 {
@@ -2173,6 +2239,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:pb-5 {
     padding-bottom: 1.25rem;
   }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2186,5 +2262,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:w-\[21rem\] {
     width: 21rem;
+  }
+
+  .xl\:w-\[19rem\] {
+    width: 19rem;
   }
 }

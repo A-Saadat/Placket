@@ -20,31 +20,48 @@
         <div class="content">
             <nav class=" flex justify-between mx-5 mt-3">
                 <div class="welcome">
-                    <h1 class="font-lalezar text-2xl md:text-3xl text-TitleColor">
+                    <h1 class="font-lalezar text-2xl lg:text-3xl text-TitleColor">
                         سلام
                         <span>علی</span>
                         خوش اومدی!
                     </h1>
-                    <p class="text-DstpColor font-semibold md:text-base text-sm">اینجا میتونی اگهی ها و درخواست هات رو اینجا مدیریت کنی!</p>
+                    <p class="text-DstpColor font-semibold lg:text-base md:text-sm text-xs">اینجا میتونی اگهی ها و درخواست هات رو اینجا مدیریت کنی!</p>
                 </div>
                 <ul class="panel_nav flex items-center gap-7 translate-y-[10%]">
 
-                    <li class=" flex items-center relative">
+                    <li class=" items-center relative lg:flex hidden">
                         <input type="text" class="xl:w-[21rem] w-48 placeholder:text-sm bg-AccentColor text-TitleColor placeholder:text-TitleColor p-2 rounded-lg focus:ring-[3px] transition-all duration-150 ring-green-450 placeholder:font-medium" placeholder="دنبال چه کتابی میگردی؟!">
                         <a href="#" class="absolute left-3 text-sm top-[13px]">
                             <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
                         </a>
                     </li>
 
-                    <li class="flex items-center gap-1">
+                    <li class=" items-center gap-1 lg:flex hidden">
                         <i class="fa fa-plus text-2xl text-primeryColor"></i>
                         <span class="font-semibold text-base">ایجاد آگهی</span>
                     </li>
 
-                    <li href="#" class="block relative">
+                    <li class=" relative lg:flex hidden">
                         <i class="fa fa-bell text-2xl text-primeryColor"></i>
                         <i class="fa fa-circle absolute left-[10px] top-[3px] text-[10px] text-AccentColor"></i>
                     </li>
+
+                    <li class="userEdit hidden lg:ml-6 cursor-pointer items-center gap-2 flex-row hover:bg-TitleColor bg-AccentColor text-TitleColor transition-all duration-200 hover:text-AccentColor px-2 py-1 rounded-md hover:shadow-sm shadow-primeryColor">
+                        <h4 class="font-medium">ویرایش پروفایل</h4>
+                        <i class="fa fa-user-edit text-xl"></i>
+                    </li>
+
+                    <li class="block lg:hidden lg:ml-6 cursor-pointer">
+                        <svg class="burger-btn" width="30" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="burger-btn--1" width="30" height="6" rx="3" ry="3" />
+                          <rect class="burger-btn--2" width="35" height="6" y="10" rx="3" ry="3" />
+                          <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
+                      </svg>
+                    </li>
+                   
+                    
+
+
                 </ul>
             </nav>
 

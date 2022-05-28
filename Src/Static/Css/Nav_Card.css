@@ -121,27 +121,6 @@
     border-radius: 15%;
   }
   
-  .swiper {
-    width: 240px;
-    height: 320px;
-  }
-  
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    box-shadow: rgba(17, 17, 26, 0.5) 0px 4px 16px, rgba(17, 17, 26, 0.5) 0px 8px 32px;
-  }
-  
-  .swiper-slide:nth-child(2n) {
-    background-color: #333d29;
-    
-  }
-  
   .scrollbar{
       scrollbar-width: none;
   }

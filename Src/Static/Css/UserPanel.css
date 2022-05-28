@@ -24,6 +24,10 @@
     grid-gap: 1rem !important;
 }
 
+.userEdit{
+    display: none !important;
+}
+
 @media screen and (max-width: 1140px){
     .UserProfile{
         position: absolute !important;
@@ -33,5 +37,14 @@
         -moz-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
         -o-transform: translateX(-100%);
+    }
+    .userEdit{
+        display: flex !important;
+    }
 }
+
+@media screen and (max-width: 991.98px){
+    .userEdit{
+        display: none !important;
+    }
 }
