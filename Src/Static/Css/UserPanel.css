@@ -1,13 +1,3 @@
-.Customgrid{
-    display: grid;
-    grid-template-columns: 4fr auto;
-}
-
-.customslide{
-    width: fit-content !important;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-}
-
 .custom_Grid{
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
@@ -18,13 +8,8 @@
     display: none !important;
 }
 
-.swiper2{
+.panelSwiper{
     display: none;
-}
-
-.swiper-slide{
-    width: 100% !important;
-    max-width: 320px !important;
 }
 
 
@@ -52,10 +37,14 @@
     .custom_Grid{
         display: none !important;
     }
-    .swiper2{
+    .panelSwiper{
         display: flex !important;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        gap: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .Customgrid{
+        display: grid;
+        grid-template-columns: 4fr auto;
     }
 }
