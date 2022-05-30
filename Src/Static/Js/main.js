@@ -18,3 +18,4 @@ function Click(el) {
 Click(navbar)
 Click(close_btn)
 Click(blur)
+

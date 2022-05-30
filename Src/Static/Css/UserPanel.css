@@ -8,16 +8,6 @@
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-.mySwiper{
-    width: 70vw !important; 
-    height: auto !important;
-}
-
-.swiper-wrapper{
-    display: flex !important;
-    gap: 1rem !important;
-}
-
 .custom_Grid{
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
@@ -27,6 +17,16 @@
 .userEdit{
     display: none !important;
 }
+
+.swiper2{
+    display: none;
+}
+
+.swiper-slide{
+    width: 100% !important;
+    max-width: 320px !important;
+}
+
 
 @media screen and (max-width: 1140px){
     .UserProfile{
@@ -43,8 +43,19 @@
     }
 }
 
+
+
 @media screen and (max-width: 991.98px){
     .userEdit{
         display: none !important;
+    }
+    .custom_Grid{
+        display: none !important;
+    }
+    .swiper2{
+        display: flex !important;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 1rem !important;
     }
 }

@@ -72,7 +72,7 @@
                 </div>
                 
                 <div class="custom_Grid mt-5">
-                    <div class="customShadow flex gap-3 bg-AccentColor p-3 rounded-xl">
+                    <div class="customShadow flex gap-3 bg-AccentColor p-3 rounded-xl items-center h-fit">
                         <div class="req_img w-1/3 h-[5.5rem] rounded-lg overflow-hidden shadow-md">
                             <img src="./Static/img/The Righteous mind.webp" class="filter contrast-125 w-full h-[5.5rem] rounded-lg hover:scale-105 duration-150 transition-all object-cover" alt="">
                         </div>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="customShadow flex gap-3 bg-AccentColor p-3 rounded-xl">
+                    <div class="customShadow flex gap-3 bg-AccentColor p-3 rounded-xl items-center h-fit">
                         <div class="req_img w-1/3 h-[5.5rem] rounded-lg overflow-hidden shadow-md">
                             <img src="./Static/img/The Righteous mind.webp" class="filter contrast-125 w-full h-[5.5rem] rounded-lg hover:scale-105 duration-150 transition-all object-cover" alt="">
                         </div>
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="customShadow flex gap-3 bg-AccentColor p-3 rounded-xl">
+                    <div class="customShadow flex gap-3 bg-AccentColor p-3 rounded-xl items-center h-fit">
                         <div class="req_img w-1/3 h-[5.5rem] rounded-lg overflow-hidden shadow-md">
                             <img src="./Static/img/The Righteous mind.webp" class="filter contrast-125 w-full h-[5.5rem] rounded-lg hover:scale-105 duration-150 transition-all object-cover" alt="">
                         </div>
@@ -236,13 +236,36 @@
 
     </div>
 
-    <script src="./Static/Js/swiper-bundle.min.js"></script>
-    <script>
+     <!-- scripts -->
+     <script src="./Static/Js/swiper-bundle.min.js"></script>
+     <script>
         var swiper = new Swiper(".mySwiper", {
-        watchSlidesProgress: true,
-        slidesPerView: 'auto'
-      });
-    </script>
+          slidesPerView: 2,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          spaceBetween: 10,
+          loop: true,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          breakpoints: {
+            991: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            769: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
+            450: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+          },
+        });
+      </script>
+     <script src="./Static/Js/Main.js"></script>
 
 </div>
 </body>
