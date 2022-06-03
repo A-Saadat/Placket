@@ -159,9 +159,9 @@
 }
 
 .dark_box{
-    background-color: #1e272ecb;
-    height: 100vh;
-    z-index: 100;
+    background-color: hsla(96, 5%, 19%, 0.822) ;
+    height: 100vh ;
+    z-index: 20;
     position: fixed;
     top: 0;
     width: 100%;

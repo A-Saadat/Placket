@@ -17,7 +17,7 @@
 <body class="font-vazir bg-BgColor">
     
     <div class="Customgrid">
-
+        <div class="dark_box" data-visible="none"></div>
         <div class="content">
             <nav class=" flex justify-between mx-5 mt-3">
                 <div class="welcome">
@@ -270,11 +270,12 @@
             </div>
 
         </div>
-        <div class="UserProfile transition-all duration-500 sidebar w-fit flex flex-col sticky top-0 items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
+        <div class="UserProfile shadow-xl shadow-black xl:shadow-none transition-all duration-500 sidebar w-fit flex flex-col sticky top-0 items-center bg-primeryColor h-screen rounded-br-lg rounded-tr-lg">
             <div class="border-b-2 border-lowOpacity2 py-3 mb-5">
                 <div class="userbg xl:w-[19rem] w-72 h-36 relative">
                     <img src="./Static/img/User_defBg.png" class="rounded-2xl w-full h-48 object-cover" alt="">
                     <i class="fa fa-user-edit cursor-pointer absolute top-2 left-4 text-2xl text-primeryColor"></i>
+                    <i class="fa fa-close cursor-pointer absolute top-2 right-4 text-3xl text-primeryColor UserPanelCloseBtn"></i>
                 </div>
                 <div class="userInfo_Edit flex">
                         <div class=" overflow-hidden w-20 h-20 rounded-full relative -translate-x-5">

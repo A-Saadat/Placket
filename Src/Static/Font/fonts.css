@@ -1,0 +1,130 @@
+﻿@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-medium.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-demibold.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-demibold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-demibold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-demibold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: normal;
+	font-weight: 800;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-extrabold.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-extrabold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-extrabold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-extrabold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-bold.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-regular.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+/**
+Iranic fonts
+**/
+
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: italic;
+	font-weight: 500;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-mediumitalic.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-mediumitalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-mediumitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-mediumitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: italic;
+	font-weight: bold;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-bolditalic.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-bolditalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-bolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-bolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-display: swap;
+	font-style: italic;
+	font-weight: normal;
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-regularitalic.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/eot/dana-noen-regularitalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff2/dana-noen-regularitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/Dana-Pro/non-english-web-fonts/fonts/woff/dana-noen-regularitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+@font-face {
+    font-family: gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('https://cdn.karlancer.com/assets/fonts/Gilroy/Radomir-Tinkov-Gilroy-Bold.otf');
+    src: url('https://cdn.karlancer.com/assets/fonts/Gilroy/Radomir-Tinkov-Gilroy-Bold.otf') format('otf'), /* FF39+,Chrome36+, Opera24+*/
+}
+
+@font-face {
+	font-family: kalameh;
+	font-display: swap;
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/eot/KalamehWeb_Regular.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/eot/KalamehWeb_Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/woff2/KalamehWeb_Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+         url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/woff/KalamehWeb_Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: kalameh;
+	font-display: swap;
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/eot/KalamehWeb_Black.eot');
+	src: url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/eot/KalamehWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/woff2/KalamehWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://cdn.karlancer.com/assets/fonts/kalameh/KalamehWeb/woff/KalamehWeb_Black.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://cdn.karlancer.com/assets/fonts/icomoon/fonts/icomoon.eot?ih50e0');
+  src:  url('https://cdn.karlancer.com/assets/fonts/icomoon/fonts/icomoon.eot?ih50e0#iefix') format('embedded-opentype'),
+    url('https://cdn.karlancer.com/assets/fonts/icomoon/fonts/icomoon.ttf?ih50e0') format('truetype'),
+    url('https://cdn.karlancer.com/assets/fonts/icomoon/fonts/icomoon.woff?ih50e0') format('woff'),
+    url('https://cdn.karlancer.com/assets/fonts/icomoon/fonts/icomoon.svg?ih50e0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

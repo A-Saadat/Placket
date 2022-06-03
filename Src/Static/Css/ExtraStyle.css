@@ -21,6 +21,34 @@ textarea:focus{
   outline-width: 0;
 }
 
+.turningLoader{
+  animation: turningLoader 1500ms infinite alternate;
+  -webkit-animation: turningLoader 1500ms infinite alternate;
+}
+
+.FadeOut{
+  animation: FadeOut 500ms ease-in;
+  -webkit-animation: FadeOut 500ms ease-in;
+}
+
+@keyframes turningLoader{
+  0%{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+
+@keyframes FadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 /* -------------Header--------------- */
 
 nav{
