@@ -1,33 +1,50 @@
 const $ = document;
 function _id(id){
-    return document.getElementById(id);
+    return $.getElementById(id);
 }
 
 const Select = _id('customSelect');
 const Options = _id('options');
 const SelectOptions = $.querySelectorAll('.selectOptions');
-const chevron = _id('chevron');
+const chevron = $.querySelector('i[class*="chevron"]');
 const body = $.body;
+const makeAdsBtn = _id('makeAdsBtn');
+const makeAdsModal = _id('makeAdsModal');
+const darkBox = $.querySelector('.dark_box');
 
-Select.addEventListener('click', e => {
+
+function showOptions(){
     Options.style.visibility = "visible";
     Options.style.opacity = "1";
     Options.style.position = "relative";
-})
+    chevron.style.transform = "rotate(180deg)";
+}
 
-body.addEventListener('click', e => {
+function hideOptionsWithBody(e){
     if(e.target.className != "selectOptions" && e.target.id !== "customSelect"){
         Options.style.opacity = "0";
         Options.style.visibility = "hidden";
         Options.style.position = "absolute";
+        chevron.style.transform = "rotate(0deg)";
     }
-})
+}
 
-SelectOptions.forEach(el => {
-    el.addEventListener('click', e => {
-        Select.innerHTML = `${el.value} <i class="fa-solid fa-chevron-down"></i>`;
+function hideOptions(){
+    Select.innerHTML = el.value + chevron;
         Options.style.opacity = "0";
         Options.style.visibility = "hidden";
         Options.style.position = "absolute";
-    })
-});
+        chevron.style.transform = "rotate(0deg)";
+}
+
+Select.addEventListener('click', showOptions);
+body.addEventListener('click', hideOptionsWithBody);
+SelectOptions.forEach(el => el.addEventListener('click', hideOptions));
+
+makeAdsBtn.addEventListener('click', () => {
+    makeAdsModal.style.opacity = 1;
+    makeAdsModal.style.visibility = "visible";
+    makeAdsModal.style.transform = "translateY(0)";
+    darkBox.style.display = "block";
+    console.log('clicked');
+})

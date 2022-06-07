@@ -182,8 +182,10 @@
 }
 
 input:focus,
-input:focus-within{
-    outline: 0;
+input:focus-within,
+textarea:focus,
+textarea:focus-within{
+    outline: 0 !important;
 }
 
 .card_thumb {
@@ -290,6 +292,12 @@ input:focus-within{
 .navbar_toggler{
     display: none;
 }
+
+#makeAdsModal{
+  visibility: hidden;
+  height: calc(100vh - 30px);
+}
+
 
 
 @media(max-width: 999px){

@@ -11,13 +11,100 @@
     <link rel="stylesheet" href="./Static/Font/FontFace.css">
     
     <link rel="stylesheet" href="./Static/Css/Nav_Card.css">
+    <link rel="stylesheet" href="./Static/Css/MakeAd.css">
     <link rel="stylesheet" href="./Static/Css/UserPanel.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
 <body class="font-vazir bg-BgColor">
+
+    <div id="makeAdsModal" style="visibility: hidden;" class="opacity-0 max-w-screen-lg z-50 contact__bg lg:m-auto sm:mx-10 mx-2 rounded-2xl fixed left-0 top-0 right-0 bottom-0 m-auto font-medium py-10 text-BgColor bg-TitleColor flex flex-col items-center transition-all duration-200 -translate-y-14">
+        <h1 class="font-lalezar xl:text-4xl text-3xl">آگهی جدید بساز!</h1>
+        <i class="fa fa-close cursor-pointer absolute top-2 right-4 text-3xl text-[#f5f5f5ab] hover:text-[#f5f5f5]"></i>
+
+        <form class="w-full bg_MakeAd flex justify-center flex-col items-center gap-2 text-TitleColor">
+            <div class="bookName md:w-1/2 w-full md:px-0 px-10">
+                <label class="text-BgColor flex items-center gap-2 pb-1">
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="">نام کتاب</span>
+                </label>
+                <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام کتاب رو وارد کن!">
+            </div>
+
+            <div class="authorName md:w-1/2 w-full md:px-0 px-10">
+                <label class="text-BgColor flex items-center gap-2 pb-1">
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="">نام نویسنده</span>
+                </label>
+                <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام نویسنده رو وارد کن!">
+            </div>
+
+            <div class="bookPrice md:w-1/2 w-full md:px-0 px-10 flex gap-2">
+                <div class="suggestPrice w-1/2">
+                    <label class="text-BgColor flex items-center gap-2 pb-1">
+                        <i class="fa fa-arrow-left"></i>
+                        <span class="">قیمت پیشنهادی</span>
+                    </label>
+                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت پیشنهادیت رو وارد کن!">
+                </div>
+                <div class="mainPrice w-1/2">
+                    <label class="text-BgColor flex items-center gap-2 pb-1">
+                        <i class="fa fa-arrow-left"></i>
+                        <span class="">قیمت جلد</span>
+                    </label>
+                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت روی جلد را وارد کن!">
+                </div>
+            </div>
+
+            <div class="md:w-1/2 w-full md:px-0 px-10">
+                <label class="text-BgColor flex items-center gap-2 pb-1">
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="">دسته بندی</span>
+                </label>
+                <div id="customSelect" class="cursor-pointer text-sm xl:text-base font-medium flex items-center gap-3 justify-between rounded-md bg-AccentColor select-none px-3 w-full h-11 border-2 border-AccentColor">
+                    <span class="block pointer-events-none" style="font-size: 14px; font-weight: 400; color: #454e3bd9;">انتخاب کن!</span>
+                    <i class="fa-solid fa-chevron-down pointer-events-none transition-all" ></i>
+                </div>
+                <div id="options" style="visibility: hidden; opacity: 0; position: absolute;">
+                    <ul class=" text-sm xl:text-base font-medium divide-y-2 divide-lowOpacity h-fit bg-AccentColor mt-2 rounded-md p-2 transition-all duration-200 border-2 border-AccentColor">
+                    <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="علمی">علمی</option>
+                    <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="رمان">رمان</option>
+                    <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="درسی">درسی</option>
+                    <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="درسی">درسی</option>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="PhoneNum md:w-1/2 w-full md:px-0 px-10 flex gap-2">
+                <div class="suggestPrice w-1/2">
+                    <label class="text-BgColor flex items-center gap-2 pb-1">
+                        <i class="fa fa-arrow-left"></i>
+                        <span class="">قیمت پیشنهادی</span>
+                    </label>
+                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت پیشنهادیت رو وارد کن!">
+                </div>
+                <div class="mainPrice w-1/2">
+                    <label class="text-BgColor flex items-center gap-2 pb-1">
+                        <i class="fa fa-arrow-left"></i>
+                        <span class="">قیمت جلد</span>
+                    </label>
+                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت روی جلد را وارد کن!">
+                </div>
+            </div>
+            
+            <div class="moreInfo md:w-1/2 w-full md:px-0 px-10">
+                <label class="text-BgColor flex items-center gap-2 pb-1">
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="">توضیحات تکمیلی</span>
+                </label>
+                <textarea type="text" rows="4" class=" p-3 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="توضیحاتت درباره محصول رو میتونی اینجا وارد کنی!"></textarea>
+            </div>
+            
+        </form>
+
+    </div>
     
     <div class="Customgrid">
-        <div class="dark_box" data-visible="none"></div>
+        <div class="dark_box"></div>
         <div class="content">
             <nav class=" flex justify-between mx-5 mt-3">
                 <div class="welcome">
@@ -37,7 +124,7 @@
                         </a>
                     </li>
 
-                    <li class=" items-center gap-1 lg:flex hidden">
+                    <li id="makeAdsBtn" class="items-center gap-1 lg:flex hidden cursor-pointer">
                         <i class="fa fa-plus text-2xl text-primeryColor"></i>
                         <span class="font-semibold text-base">ایجاد آگهی</span>
                     </li>
@@ -345,6 +432,7 @@
 
      <!-- scripts -->
      <script src="./Static/Js/swiper-bundle.min.js"></script>
+     <script src="./Static/Js/CustomSelect.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -374,7 +462,7 @@
           }
         });
     </script>
-     <script src="./Static/Js/Main.js"></script>
+     <!-- <script src="./Static/Js/Main.js"></script> -->
 
 </div>
 </body>

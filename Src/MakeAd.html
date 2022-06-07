@@ -7,16 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Static/Font Awesome/all.css">
     <link rel="stylesheet" href="./Static/Font/FontFace.css">
-    <link rel="stylesheet" href="./MakeAd.css">
-    <!-- <link rel="stylesheet" href="./Static/Css/Bootstrap.css"> -->
+    <link rel="stylesheet" href="./Static/Css/MakeAd.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
 </head>
 <body class="font-vazir">
     
-    <div class="container font-medium py-10 text-BgColor bg-primeryColor m-auto flex flex-col items-center">
+    <div class="max-w-screen-lg contact__bg h-fit lg:m-auto sm:mx-10 mx-2 rounded-2xl fixed left-0 top-0 right-0 bottom-0 m-auto font-medium py-10 text-BgColor bg-TitleColor flex flex-col items-center">
         <h1 class="font-lalezar xl:text-4xl text-3xl">آگهی جدید بساز!</h1>
 
-        <form class="w-full flex justify-center flex-col items-center gap-2 text-TitleColor">
+        <form class="w-full bg_MakeAd flex justify-center flex-col items-center gap-2 text-TitleColor">
             <div class="bookName md:w-1/2 w-full md:px-0 px-10">
                 <label class="text-BgColor flex items-center gap-2 pb-1">
                     <i class="fa fa-arrow-left"></i>
@@ -24,6 +23,7 @@
                 </label>
                 <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام کتاب رو وارد کن!">
             </div>
+
             <div class="authorName md:w-1/2 w-full md:px-0 px-10">
                 <label class="text-BgColor flex items-center gap-2 pb-1">
                     <i class="fa fa-arrow-left"></i>
@@ -31,6 +31,7 @@
                 </label>
                 <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام نویسنده رو وارد کن!">
             </div>
+
             <div class="bookPrice md:w-1/2 w-full md:px-0 px-10 flex gap-2">
                 <div class="suggestPrice w-1/2">
                     <label class="text-BgColor flex items-center gap-2 pb-1">
@@ -53,9 +54,9 @@
                     <i class="fa fa-arrow-left"></i>
                     <span class="">دسته بندی</span>
                 </label>
-                <div id="customSelect" class="cursor-pointer text-sm xl:text-base font-medium flex items-center gap-3 justify-between rounded-md bg-AccentColor select-none px-3 w-full h-11 border-2 border-AccentColor">
+                <div id="customSelect" class="cursor-pointer text-sm xl:text-base font-medium flex items-center gap-3 justify-between rounded-md bg-AccentColor select-none px-3 w-full h-11 border-2 border-AccentColor transition-opacity">
                     <span class="block pointer-events-none" style="font-size: 14px; font-weight: 400; color: #454e3bd9;">انتخاب کن!</span>
-                    <i class="fa-solid fa-chevron-down pointer-events-none" id="chevron"></i>
+                    <i class="fa-solid fa-chevron-down pointer-events-none" ></i>
                 </div>
                 <div id="options" style="visibility: hidden; opacity: 0; position: absolute;">
                     <ul class=" text-sm xl:text-base font-medium divide-y-2 divide-lowOpacity h-fit bg-AccentColor mt-2 rounded-md p-2 transition-all duration-200 border-2 border-AccentColor">
@@ -67,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="bookPrice md:w-1/2 w-full md:px-0 px-10 flex gap-2">
+            <div class="PhoneNum md:w-1/2 w-full md:px-0 px-10 flex gap-2">
                 <div class="suggestPrice w-1/2">
                     <label class="text-BgColor flex items-center gap-2 pb-1">
                         <i class="fa fa-arrow-left"></i>
@@ -82,6 +83,14 @@
                     </label>
                     <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت روی جلد را وارد کن!">
                 </div>
+            </div>
+            
+            <div class="moreInfo md:w-1/2 w-full md:px-0 px-10">
+                <label class="text-BgColor flex items-center gap-2 pb-1">
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="">توضیحات تکمیلی</span>
+                </label>
+                <textarea type="text" rows="5" class=" p-3 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="توضیحاتت درباره محصول رو میتونی اینجا وارد کنی!"></textarea>
             </div>
             
         </form>
