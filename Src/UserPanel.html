@@ -21,13 +21,62 @@
         <h1 class="font-lalezar xl:text-4xl text-3xl">آگهی جدید بساز!</h1>
         <i class="fa fa-close cursor-pointer absolute top-2 right-4 text-3xl text-[#f5f5f5ab] hover:text-[#f5f5f5]"></i>
 
-        <form class="w-full bg_MakeAd flex justify-center flex-col items-center gap-2 text-TitleColor">
+        <form id="form1" class="w-full bg_MakeAd flex justify-center flex-col items-center gap-2 text-TitleColor relative">
+
+            <div class="uploudImg md:w-1/2 w-full md:px-0 px-10 text-BgColor mb-10">
+                <div> 
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="">عکس آگهی</span>
+                    <p class="text-AccentColor">افزودن عکس به اگهی، بازدید آگهی رو بالا میبره!</p>
+                </div>
+
+                <div class="grid customGrid-3">
+                    <label for="uploudImg1">
+                        <input id="uploudImg1" type="file" class="invisible" accept="image/gif, image/jpeg, image/png">
+                        <div data-uploud="selectMessage" class="flex flex-col justify-center items-center w-full h-28 border-dashed border-AccentColor border-2 rounded-lg gap-2 cursor-pointer">
+                            <i class="fas fa-camera text-2xl" aria-hidden="true"></i>
+                            <div class="flex items-center gap-1">
+                                <span class="block">افزودن عکس</span>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="uploudImg2">
+                        <input id="uploudImg2" type="file" class="invisible" accept="image/gif, image/jpeg, image/png">
+                        <div data-uploud="selectMessage" class="flex flex-col justify-center items-center w-full h-28 border-dashed border-AccentColor border-2 rounded-lg gap-2 cursor-pointer">
+                            <i class="fas fa-camera text-2xl" aria-hidden="true" ></i>
+                            <div class="flex items-center gap-1">
+                                <span class="block">افزودن عکس</span>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                            
+                        </div>
+                    </label>
+                    <label for="uploudImg3">
+                        <input id="uploudImg3" type="file" class="invisible" accept="image/gif, image/jpeg, image/png">
+                        <div data-uploud="selectMessage" class="flex flex-col justify-center items-center w-full h-28 border-dashed border-AccentColor border-2 rounded-lg gap-2 cursor-pointer">
+                            <i class="fas fa-camera text-2xl" aria-hidden="true" ></i>
+                            <div class="flex items-center gap-1">
+                                <span class="block">افزودن عکس</span>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                            
+                        </div>
+                    </label>
+                </div>
+            </div>
+
             <div class="bookName md:w-1/2 w-full md:px-0 px-10">
                 <label class="text-BgColor flex items-center gap-2 pb-1">
                     <i class="fa fa-arrow-left"></i>
                     <span class="">نام کتاب</span>
                 </label>
-                <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام کتاب رو وارد کن!">
+                <div class="relative">
+                    <input data-required="true" type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام کتاب رو وارد کن!">
+                    <span data-alert="true" class="alignInputIcon hidden text-red-900">
+                        <i class="fa fa-exclamation-triangle text-xl" aria-hidden="true"></i>
+                    </span>
+                </div>
             </div>
 
             <div class="authorName md:w-1/2 w-full md:px-0 px-10">
@@ -35,7 +84,13 @@
                     <i class="fa fa-arrow-left"></i>
                     <span class="">نام نویسنده</span>
                 </label>
-                <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام نویسنده رو وارد کن!">
+                
+                <div class="relative">
+                    <input data-required="true" type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="لطفا نام نویسنده رو وارد کن!">
+                    <span data-alert="true" class="alignInputIcon hidden text-red-900">
+                        <i class="fa fa-exclamation-triangle text-xl" aria-hidden="true"></i>
+                    </span>
+                </div>
             </div>
 
             <div class="bookPrice md:w-1/2 w-full md:px-0 px-10 flex gap-2">
@@ -44,27 +99,50 @@
                         <i class="fa fa-arrow-left"></i>
                         <span class="">قیمت پیشنهادی</span>
                     </label>
-                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت پیشنهادیت رو وارد کن!">
+                    <div class="relative">
+                        <input data-required="true" type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت پیشنهادیت رو وارد کن!">
+                        <span data-alert="true" class="alignInputIcon hidden text-red-900">
+                            <i class="fa fa-exclamation-triangle text-xl" aria-hidden="true"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="mainPrice w-1/2">
                     <label class="text-BgColor flex items-center gap-2 pb-1">
                         <i class="fa fa-arrow-left"></i>
                         <span class="">قیمت جلد</span>
                     </label>
-                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت روی جلد را وارد کن!">
+                    <div class="relative">
+                        <input data-required="true" type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت روی جلد را وارد کن!">
+                        <span data-alert="true" class="alignInputIcon hidden text-red-900">
+                            <i class="fa fa-exclamation-triangle text-xl" aria-hidden="true"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
 
+            <button id="nextPageBtn" class="flex items-center gap-2 bg-cta text-BgColor hover:bg-[#3d5a8086] px-6 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200 mt-10 focus:ring-4 ring-TitleColor">
+                <span class="text-lg">بعدی</span>
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            
+        </form>
+        
+        <div id="loadSpin" class=" absolute left-1/2 top-1/2 transition-all duration-500 opacity-0 invisible" style="transform: translate(-50%, -50%);">
+            <i class="fa fa-circle-notch text-5xl text-BgColor animate-spin" aria-hidden="true"></i>
+        </div>
+        
+        <form id="form2" class="flex invisible opacity-0 w-full bg_MakeAd justify-center flex-col items-center gap-2 text-TitleColor relative duration-500">
             <div class="md:w-1/2 w-full md:px-0 px-10">
                 <label class="text-BgColor flex items-center gap-2 pb-1">
                     <i class="fa fa-arrow-left"></i>
                     <span class="">دسته بندی</span>
                 </label>
-                <div id="customSelect" class="cursor-pointer text-sm xl:text-base font-medium flex items-center gap-3 justify-between rounded-md bg-AccentColor select-none px-3 w-full h-11 border-2 border-AccentColor">
+                <div data-select="customSelect" class="cursor-pointer text-sm xl:text-base font-medium flex items-center gap-3 justify-between rounded-md bg-AccentColor select-none px-3 w-full h-11 border-2 border-AccentColor">
                     <span class="block pointer-events-none" style="font-size: 14px; font-weight: 400; color: #454e3bd9;">انتخاب کن!</span>
                     <i class="fa-solid fa-chevron-down pointer-events-none transition-all" ></i>
                 </div>
-                <div id="options" style="visibility: hidden; opacity: 0; position: absolute;">
+                <div data-option="options" style="visibility: hidden; opacity: 0; position: absolute;">
                     <ul class=" text-sm xl:text-base font-medium divide-y-2 divide-lowOpacity h-fit bg-AccentColor mt-2 rounded-md p-2 transition-all duration-200 border-2 border-AccentColor">
                     <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="علمی">علمی</option>
                     <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="رمان">رمان</option>
@@ -78,16 +156,25 @@
                 <div class="suggestPrice w-1/2">
                     <label class="text-BgColor flex items-center gap-2 pb-1">
                         <i class="fa fa-arrow-left"></i>
-                        <span class="">قیمت پیشنهادی</span>
+                        <span class="">شماره تماس</span>
                     </label>
-                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت پیشنهادیت رو وارد کن!">
+                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="شماره تماست رو وارد کن!">
                 </div>
                 <div class="mainPrice w-1/2">
                     <label class="text-BgColor flex items-center gap-2 pb-1">
                         <i class="fa fa-arrow-left"></i>
-                        <span class="">قیمت جلد</span>
+                        <span class="">وضعیت دسترسی</span>
                     </label>
-                    <input type="text" class="h-11 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="قیمت روی جلد را وارد کن!">
+                    <div data-select="customSelect" class="cursor-pointer text-sm xl:text-base font-medium flex items-center gap-3 justify-between rounded-md bg-AccentColor select-none px-3 w-full h-11 border-2 border-AccentColor">
+                        <span class="block pointer-events-none" style="font-size: 14px; font-weight: 400; color: #454e3bd9;">انتخاب کن!</span>
+                        <i class="fa-solid fa-chevron-down pointer-events-none transition-all" ></i>
+                    </div>
+                    <div data-option="options" style="visibility: hidden; opacity: 0; position: absolute;">
+                        <ul class=" text-sm xl:text-base font-medium divide-y-2 divide-lowOpacity h-fit bg-AccentColor mt-2 rounded-md p-2 transition-all duration-200 border-2 border-AccentColor">
+                        <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="عمومی">عمومی</option>
+                        <option class="cursor-pointer rounded-lg p-2 px-3 hover:bg-[#b0b39c] selectOptions" value="خصوصی">خصوصی</option>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
@@ -98,8 +185,9 @@
                 </label>
                 <textarea type="text" rows="4" class=" p-3 bg-AccentColor placeholder:text-[#454e3bd9] text-sm xl:text-base focus:ring-4 ring-TitleColor transition-all duration-150 focus:scale-x-[1.01] w-full px-2 rounded-md  placeholder:text-sm" placeholder="توضیحاتت درباره محصول رو میتونی اینجا وارد کنی!"></textarea>
             </div>
-            
         </form>
+        
+            
 
     </div>
     
@@ -288,7 +376,7 @@
                             <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
                             <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
                         </div>
-                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                        <button class="block m-auto mt-2 bg-[#3D5A80] hover:bg-[#061A23] text-BgColor px-5 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200">مشاهده آگهی</button>
                     </div>
 
                     <div class=" bg-AccentColor p-4 rounded-lg">
@@ -299,7 +387,7 @@
                             <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
                             <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
                         </div>
-                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                        <button class="block m-auto mt-2 bg-[#3D5A80] hover:bg-[#061A23] text-BgColor px-5 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200">مشاهده آگهی</button>
                     </div>
 
                     <div class=" bg-AccentColor p-4 rounded-lg">
@@ -310,7 +398,7 @@
                             <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
                             <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
                         </div>
-                        <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                        <button class="block m-auto mt-2 bg-[#3D5A80] hover:bg-[#061A23] text-BgColor px-5 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200">مشاهده آگهی</button>
                     </div>
                 </div>
 
@@ -325,7 +413,7 @@
                                 <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
                                 <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
                             </div>
-                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            <button class="block m-auto mt-2 bg-[#3D5A80] hover:bg-[#061A23] text-BgColor px-5 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200">مشاهده آگهی</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -337,7 +425,7 @@
                                 <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
                                 <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
                             </div>
-                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            <button class="block m-auto mt-2 bg-[#3D5A80] hover:bg-[#061A23] text-BgColor px-5 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200">مشاهده آگهی</button>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -349,7 +437,7 @@
                                 <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">ملت عشق</h1>
                                 <span class="text-DstpColor font-medium text-[.92rem]">در این کتاب داستان شمس و موالا <br> و فردی را میخوانید که...</span>
                             </div>
-                            <button class="block m-auto mt-2 bg-DstpColor text-BgColor px-4 py-2 rounded-md text-base font-medium">مشاهده آگهی</button>
+                            <button class="block m-auto mt-2 bg-[#3D5A80] hover:bg-[#061A23] text-BgColor px-5 h-11 py-2 rounded-md text-base font-semibold transition-all duration-200">مشاهده آگهی</button>
                         </div>
                       </div>
                     </div>
@@ -461,6 +549,7 @@
             }
           }
         });
+
     </script>
      <!-- <script src="./Static/Js/Main.js"></script> -->
 

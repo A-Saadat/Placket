@@ -20,8 +20,9 @@ module.exports = {
         TitleColor: "hsl(90,20%,20%)",
         DstpColor: "hsl(201,14%,36%)",
         primeryColor: "hsl(88,14%,27%)",
-        AccentColor: "hsl(67,19%,72%)",
+        AccentColor: "hsl(67,19%,78%)",
         BgColor: "hsl(49,100%,97%)",
+        cta: "#3D5A80",
 
         gray:{
           250: "#fffcee",
