@@ -2,11 +2,6 @@ const $ = document;
 function _id(id){
     return $.getElementById(id);
 }
-
-const Select = $.querySelectorAll('[data-select]');
-const Options = $.querySelectorAll('[data-option]');
-const SelectOptions = $.querySelectorAll('.selectOptions');
-const chevron = $.querySelector('i[class*="chevron"]');
 const body = $.body;
 const makeAdsBtn = _id('makeAdsBtn');
 const makeAdsModal = _id('makeAdsModal');
@@ -21,28 +16,6 @@ function showModal(){
     darkBox.style.display = "block";
 }
 
-let isSelect = 1;
-
-Select.forEach((el, idx) => {
-    el.addEventListener('click', e => {
-        Options[idx].style.visibility = "visible";
-        Options[idx].style.opacity = "1";
-        Options[idx].style.position = "relative";
-        chevron.style.transform = "rotate(180deg)";
-        console.log('open')
-        SelectOptions.forEach(opt => opt.addEventListener('click', e => {
-            Select[idx].innerHTML = opt.value + chevron;
-            Options[idx].style.opacity = "0";
-            Options[idx].style.visibility = "hidden";
-            Options[idx].style.position = "absolute";
-            chevron.style.transform = "rotate(0deg)";
-            console.log('close')
-        }));
-    })
-})
-
-let cnt = 0;
-
 function uploudimg(num){
     let Adimg = $.getElementById(`uploudImg${num}`);
     let icon = Adimg.nextElementSibling.firstElementChild;
@@ -56,39 +29,101 @@ function uploudimg(num){
     })
 }
 
-for(let i = 1; i <= 3; i++)
-    uploudimg(i);
+function prevPage(e){
+    e.preventDefault();
+    _id('form2').style.display = "none";
+    _id('form1').style.display = "flex";
+    _id('form1').style.visibility = "visible";
+    _id('form1').style.opacity = "1";
+}
+
+function customSelect(num){
+    let select = _id(`customSelect${num}`);
+    let option = _id(`selectOption${num}`);
+    let selectOption = $.querySelectorAll(`.selectOptions${num}`);
+    let chevron = $.querySelector(`[data-id = chevron${num}]`);
+    
+    select.addEventListener('click', e => {
+        option.style.visibility = "visible";
+        option.style.opacity = "1";
+        option.style.position = "relative";
+        chevron.style.transform = "rotate(180deg)";
+    })
+    selectOption.forEach(opt => {
+        opt.addEventListener('click', e => {
+            select.innerHTML = opt.value;
+            console.log(chevron)
+            option.style.opacity = "0";
+            option.style.visibility = "hidden";
+            option.style.position = "absolute";
+            chevron.style.transform = "rotate(0deg)";
+        })
+    })
+}
+
 
 function nextPage(e){
     e.preventDefault();
     let isValid = true;
     let required = $.querySelectorAll('[data-required]');
     let inputAlert = $.querySelectorAll('[data-alert]')
-
+    
     required.forEach((el, idx) => {
-        if (el.value === ''){
+        if (el.value === '' || el.value === null) {
             inputAlert[idx].style.display = "block";
             el.style.border = '2px solid red';
             isValid = false;
+        } else{
+            inputAlert[idx].style.display = "none";
+            el.style.border = 'none';
         }
     })
-
+    
     if(isValid === true){
-        _id('form1').remove();
+        _id('form1').style.opacity = "0";
+        _id('form1').style.visibility = "hidden";
+        _id('form1').style.display = "none";
         loadSpin.style.opacity = "1";
         loadSpin.style.visibility = "visible";
         console.log(loadSpin)
-
+        
         setTimeout(e => {
             loadSpin.style.opacity = "0";
             loadSpin.style.visibility = "invisible";
 
             _id('form2').style.visibility = "visible";
             _id('form2').style.opacity = "1";
-
-        }, 3000)
+            _id('form2').style.display = "flex";
+            
+            
+        }, 1000)
     }
 }
 
+function closeModal(e){
+    makeAdsModal.style.opacity = "0";
+    makeAdsModal.style.visibility = "0";
+    makeAdsModal.style.transform = "translateY(-100%)";
+    darkBox.style.display = "none";
+}
+
+function successAlert(e){
+    e.preventDefault();
+    Swal.fire(
+        'آگهی ثبت شد',
+        'آگهی شما پس از بررسی، در سایت قرار میگیرد',
+        'success'
+    )
+} 
+
+for(let i = 1; i <= 3; i++)
+    uploudimg(i);
+customSelect(1);
+customSelect(2);
+
 makeAdsBtn.addEventListener('click', showModal);
 nextPageBtn.addEventListener('click', nextPage);
+_id('prevPageBtn').addEventListener('click', prevPage);
+_id('submitAd').addEventListener('click', successAlert);
+_id('modalClose').addEventListener('click', closeModal)
+darkBox.addEventListener('click', closeModal)

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
   }
@@ -312,6 +314,19 @@ textarea:focus-within{
   top: 50%;
   transform: translate(-50%, -50%);
   left: 20px;
+}
+
+.suggestPrice > div > input::before{
+  content: 'hello';
+  position: absolute;
+  font-size: 20rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 
