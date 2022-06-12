@@ -8,6 +8,8 @@ const makeAdsModal = _id('makeAdsModal');
 const darkBox = $.querySelector('.dark_box');
 const nextPageBtn = _id('nextPageBtn')
 const loadSpin = _id('loadSpin');
+const allFormInputs = $.querySelectorAll('form input');
+const textarea = $.querySelector('textarea');
 
 function showModal(){
     makeAdsModal.style.opacity = 1;
@@ -109,11 +111,21 @@ function closeModal(e){
 
 function successAlert(e){
     e.preventDefault();
-    Swal.fire(
-        'آگهی ثبت شد',
-        'آگهی شما پس از بررسی، در سایت قرار میگیرد',
-        'success'
-    )
+    swal({
+        title: 'آگهی ثبت شد',
+        text: 'آگهی شما پس از بررسی، در سایت قرار میگیرد',
+        icon: 'success',
+        button: "باشه"
+    })
+    .then(value => {
+        console.log('it work')
+        allFormInputs.forEach(el => {
+            el.value = '';
+            textarea.value = '';
+            closeModal();
+            prevPage(e);
+        })
+    });
 } 
 
 for(let i = 1; i <= 3; i++)

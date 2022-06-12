@@ -170,6 +170,71 @@
     display: none;
 }
 
+.swal-overlay{
+  background-color: hsla(90, 6%, 13%, 0.6) ;
+}
+
+.swal-modal{
+  background: hsl(90,20%,20%);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: #5b5e4a92 0px 7px 29px 0px;
+}
+
+.swal-title{
+  color: #fff;
+  font-family: lalezar;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.swal-text{
+  color: #cfd2bc;
+  font-family: vazir;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.swal-button-container{
+  display: block;
+}
+.swal-button{
+  background-color: #3D5A80;
+  border: none;
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  font-size: 1.1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.swal-button:hover{
+  background-color: #3d5a80b1 !important;
+  color: #fff;
+}
+
+.swal-button:focus,
+.swal-button:active,
+.swal-button:focus-within{
+  outline: none !important;
+}
+
+.swal-icon::after,
+.swal-icon::before,
+.swal-icon--success__hide-corners{
+  background-color: transparent;
+}
+
 .block{
     display: block;
 }
