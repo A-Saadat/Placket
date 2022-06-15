@@ -787,10 +787,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -865,6 +861,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -927,16 +927,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 5rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-16 {
   width: 4rem;
 }
 
 .max-w-screen-lg {
   max-width: 1024px;
-}
-
-.grow {
-  flex-grow: 1;
 }
 
 .translate-y-\[-2px\] {
@@ -1573,6 +1573,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -2193,6 +2198,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-TitleColor:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(90 20% 20% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-ctaHover:hover {
+  background-color: #304663d8;
 }
 
 .hover\:text-\[blanchedalmond\]:hover {

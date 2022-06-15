@@ -24,6 +24,7 @@ module.exports = {
         AccentColor: "hsl(67,19%,78%)",
         BgColor: "hsl(49,100%,97%)",
         cta: "#3D5A80",
+        ctaHover: '#304663d8',
 
         gray:{
           250: "#fffcee",

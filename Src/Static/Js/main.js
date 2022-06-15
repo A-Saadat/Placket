@@ -20,13 +20,6 @@ Click(navbar)
 Click(close_btn)
 Click(blur)
 
-window.addEventListener('load', e => {
-    let loader = document.querySelector('.loader');
-    loader.classList.add = "FadeOut";
-    loader.style.display = "none";
-    let main = document.querySelector('.MainContent');
-    main.style.display = 'block';
-})
 
 
 

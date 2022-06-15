@@ -4,6 +4,7 @@
     "live": "npm install -g live-server"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {

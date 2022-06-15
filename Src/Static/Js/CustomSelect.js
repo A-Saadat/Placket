@@ -10,6 +10,10 @@ const nextPageBtn = _id('nextPageBtn')
 const loadSpin = _id('loadSpin');
 const allFormInputs = $.querySelectorAll('form input');
 const textarea = $.querySelector('textarea');
+const editProfile = $.querySelectorAll('[data-edit]')
+const unEditProfile = $.querySelectorAll('[data-unedit]')
+const editProfileBtn = _id('editProfileBtn');
+const saveEditProfileBtn = _id('saveEditProfileBtn');
 
 function showModal(){
     makeAdsModal.style.opacity = 1;
@@ -62,7 +66,6 @@ function customSelect(num){
         })
     })
 }
-
 
 function nextPage(e){
     e.preventDefault();
@@ -128,6 +131,33 @@ function successAlert(e){
     });
 } 
 
+function openProfileEditor(){
+    editProfile.forEach(el => {
+        el.style.display = "block";
+        _id('ChangeBgInput').style.display = "none";
+        editProfileBtn.style.display = "none";
+        saveEditProfileBtn.style.display = "block"
+    })
+    unEditProfile.forEach(el => {
+        el.style.display = "none";
+    })
+}
+
+function saveProfileChange(){
+    editProfile.forEach(el => {
+        el.style.display = "none";
+        _id('ChangeBgInput').style.display = "none";
+        editProfileBtn.style.display = "block";
+        saveEditProfileBtn.style.display = "none"
+    })
+    unEditProfile.forEach(el => {
+        el.style.display = "block";
+    })
+
+    let newProfileName = _id('changeName').value;
+    _id('nameShown').innerHTML = newProfileName;
+}
+
 for(let i = 1; i <= 3; i++)
     uploudimg(i);
 customSelect(1);
@@ -139,3 +169,6 @@ _id('prevPageBtn').addEventListener('click', prevPage);
 _id('submitAd').addEventListener('click', successAlert);
 _id('modalClose').addEventListener('click', closeModal)
 darkBox.addEventListener('click', closeModal)
+editProfileBtn.addEventListener('click', openProfileEditor);
+saveEditProfileBtn.addEventListener('click', saveProfileChange)
+
