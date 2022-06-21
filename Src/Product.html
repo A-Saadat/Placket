@@ -7,76 +7,146 @@
     <title>Product Preview</title>
 
     <link rel="stylesheet" href="./Static/Font Awesome/all.css">
-    <link rel="stylesheet" href="./Static/Css/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="./Static/Css/Library/swiper-bundle.min.css">
+    
     <link rel="stylesheet" href="./Static/Css/Product.css">
     <link rel="stylesheet" href="./Static/Css/Nav_Card.css">
-    <link rel="stylesheet" href="./Static/Css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./Static/Css/main.css">
+
+
 </head>
-<body class="font-YekanBakh background_ptn">
+<body class="font-vazir background_ptn font-medium">
 
-    <nav class="flex items-center font-semibold bg-light-350 py-3 z-40 relative">
+    <nav class="mainNav bg-[#f4f4e5] font-bold px-7 py-3 sticky top-0 z-10 shadow-md rounded-2xl text-mainColor">
+        <ul class="flex items-center navUl">
+            <li class="navbar_toggler lg:ml-6 cursor-pointer">
+                <svg class="burger-btn" width="30" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="burger-btn--1" width="30" height="6" rx="3" ry="3" />
+                  <rect class="burger-btn--2" width="35" height="6" y="10" rx="3" ry="3" />
+                  <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
+              </svg>
+            </li>
+            <li class="logo cursor-pointer">
+                <a class="flex items-center gap-1 select-none">
+                      <img src="./Static/img/NavbarLogo.svg" alt="${Navbar_logo}" width="45">
+                    <span class="text-[2.5rem] font-lalezar text-mainColor">پلاکت</span>
+                </a>
+            </li>
+            <li class="search_input mr-10">
+                <div class="search flex items-center relative">
+                    <input type="text" class="w-full placeholder:text-sm bg-[#a0a08d] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450 placeholder:font-medium" placeholder="دنبال چه کتابی میگردی؟!">
+                    <a href="#" class="absolute left-3 text-sm top-[13px]">
+                        <i class="fa-solid fa-magnifying-glass text-mainColor"></i>
+                    </a>
+                </div>
+            </li>
+            <li class=" xl:block hidden">
+                <ul class="flex gap-5 mr-10">
+                    <li><a href="#Category">دسته بندی ها</a></li>
+                    <li><a href="#Ads">آگهی ها</a></li>
+                    <li><a href="#ContactUs">ارتباط با ما</a></li>
+                </ul>
+            </li>
+            <li class="notifi flex items-center gap-6">
+                <div class="icons gap-2">
+                    <a href="#">
+                        <i class="fa-solid fa-bell text-mainColor text-2xl" title=" اعلان ها"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-clock-rotate-left text-mainColor text-2xl " title="اخرین درخواست ها"></i>
+                    </a>
+                </div>
 
-        <div class="nav-brand mr-5 ml-7">
-          <img src="./Static/img/Logo2.png" alt="Placket" width="150px" class="hover:scale-105">
+                <div class="profile flex items-center gap-3 cursor-pointer relative ">
+                    <img class="card_thumb w-[45px] h-[45px] border-2 border-green-650" src="./Static/img/user.webp" alt=""/>
+                    <span>علی سعادت</span>
+                    <i class="fa-solid fa-chevron-down text-sm translate-y-[-2px]"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="dark_box"></div>
+
+    <div class="mainNav_dashbord bg-[#283618] p-7">
+
+        <div class="sidebar_logo flex items-center gap-1 justify-center transition-all duration-150 mb-10">
+            <img src="./Static/img/logo_Simple2.png" alt="" width="45">
+            <span class="font-lalezar text-4xl text-gray-250 logo">پلاکت</span>
+            <i class="fa-solid fa-xmark close_btn"></i>
         </div>
 
-        <a href="#" class="navbar__toggler__icon absolute left-0">
+        <ul class="flex gap-y-3 flex-col ">
+            
+            <li class="dashbord_input border-b-2 border-lowOpacity pb-5">
+                <div class="flex items-center relative">
+                    <input type="text" class="w-full placeholder:text-sm bg-[#889877] text-[#333d29] placeholder:text-[#333d29] p-2 rounded-lg focus:ring-4 transition-all duration-150 ring-green-450" placeholder="دنبال چه کتابی میگردی؟!">
+                </div>
+            </li>
 
-            <svg class="burger-btn active" width="80" height="52" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
-                <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
-                <rect class="burger-btn--2" width="40" height="6" y="10" rx="3" ry="3" />
-                <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
-            </svg>
+            <li>
+            <ul class="overflow-y-scroll h-64 customScroll scroll-px-4">
+                <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                    <i class="fa-solid fa-house scale-110"></i>
+                    <span class="item"> ایجاد آگهی جدید</span>
+                </a>
+            </li>
 
-        </a>
+            <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                    <i class="fa-solid fa-house scale-110"></i>
+                    <span class="item">وضعیت درخواست ها</span>
+                </a>
+            </li>
 
-        <ul class=" gap-x-7 align-top hidden md:flex">
+            <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                    <i class="fa-solid fa-house scale-110"></i>
+                    <span class="item"></span>
+                </a>
+            </li>
 
-          <li class="">
-            <a href="#" class="text-[#313a47] hover:text-slate-600 transition-all">صفحه اصلی</a>
-          </li>
+            <li class="hover:bg-green-450 transition-all duration-150 p-4 rounded-2xl">
+                <a class="items-baseline gap-4 text-gray-250 font-medium align_center" href="">
+                    <i class="fa-solid fa-house scale-110"></i>
+                    <span class="item">صفحات مختلف</span>
+                </a>
+            </li>
 
-          <li class="">
-            <a href="#" class="text-[#313a47] hover:text-slate-600 transition-all">ویژگی ها</a>
-          </li>
+            </ul>
+            </li>
 
-          <li class="">
-            <a href="#" class="text-[#313a47] hover:text-slate-600 transition-all">صفحه آگهی ها</a>
-          </li>
+            
 
         </ul>
-        
 
-        <a href="#" class="nav__button absolute left-0 ml-7 hidden md:flex items-center gap-x-2">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <div>ورود / ثبت نام</div>
-        </a>
-
-    </nav>
+    </div>
 
     <div class="product bg-light-350 mb-16">
         
-        <div class="product_info bg-green-750 text-light-350 p-6 rounded-3xl flex flex-col justify-center">
+        <div class="product_info bg-TitleColor text-BgColor p-6 rounded-3xl flex flex-col justify-center">
 
             <div class="product_img rounded-3xl mb-3 overflow-hidden">
-                <img src="./Static/img/The Righteous mind.webp" class="hover:scale-110 transition-all duration-150 w-screen" alt="${book_name}">
+                <img src="./Static/img/The Righteous mind.webp" class="hover:scale-105 transition-all duration-150 w-screen" alt="${book_name}">
             </div>
 
             <div class="product_body">
 
-                <div class="flex flex-col text-center gap-1 my-2 border-b-2 border-t-2 border-lowOpacity p-2">
-                    <span>فروشنده: علی سعادت</span>
-                    <span>ارتباط با فروشنده</span>
+                <div class="flex flex-col text-center gap-1 my-2 border-b-2 border-t-2 border-lowOpacity p-4">
+                    <span class="text-BgColor font-medium">فروشنده: علی سعادت</span>
+                    <a href="#" class="text-AccentColor flex items-center justify-center gap-1 select-none">
+                        <span >ارتباط با فروشنده</span>
+                        <i class="fas fa-chain"></i>
+                    </a>
                 </div>
 
                 <div class="buy flex justify-between items-center pt-3 pb-2 px-2">
                     <div class="price flex gap-1">
-                        <span class="text-2xl">۵۶,۰۰۰</span>
-                        <span class=" self-end">تومان</span>
+                        <span class="text-2xl font-medium text-BgColor">۵۶,۰۰۰</span>
+                        <span class=" self-end text-AccentColor">تومان</span>
                     </div>
-                    <button class="bg-green-350 hover:bg-[#606c389d] transition-all focus:ring-4 ring-green-450 py-3 px-6 rounded-lg flex items-center gap-2">
+                    <button class="bg-green-350 text-BgColor font-medium hover:text-AccentColor hover:bg-[#606c389d] transition-all focus:ring-4 ring-green-450 py-3 px-6 rounded-lg flex items-center gap-2">
                         درخواست خرید
                     </button>
                 </div>
@@ -84,41 +154,48 @@
 
         </div>
 
-        <div class="product_dstp flex flex-col justify-center">
-            <h1 class="text-xl border-b-2 py-3">کتاب ذهن درستکار</h1>
+        <div class="product_dstp -mt-6 flex flex-col justify-center">
+            <h1 class=" border-b-2 py-3 text-TitleColor font-medium">
+                <span class="text-cta text-lg">کتاب</span>
+                <span class="font-lalezar text-2xl md:text-3xl">ذهن درستکار</span>
+            </h1>
             <div class="info border-b-2 py-3">
-                <h2 class="text-lg">مشخصات</h2>
+                <h2 class="text-xl md:text-2xl font-lalezar text-TitleColor">مشخصات</h2>
 
                 <ul class="mr-4">
                     <li>
-                        <span>نویسنده:</span>
-                        <span>جاناتان هایت</span>
+                        <span class="font-lalezar text-xl text-primeryColor">نویسنده:</span>
+                        <span class="text-TitleColor">جاناتان هایت</span>
                     </li>
                     <li>
-                        <span>قیمت جلد:</span>
-                        <span>۷۰,۰۰۰ تومان</span>
+                        <span class="font-lalezar text-xl text-primeryColor">قیمت جلد:</span>
+                        <div class="inline-block text-TitleColor">
+                            <span>۷۰,۰۰۰</span>
+                            <span>تومان</span>
+                        </div>
                     </li>
                     <li>
-                        <span>سال چاپ:</span>
-                        <span>۱۳۹۶</span>
+                        <span class="font-lalezar text-xl text-primeryColor">سال چاپ:</span>
+                        <span class="text-TitleColor">۱۳۹۶</span>
                     </li>
                 </ul>
 
             </div>
-            <article class="more_info border-b-2 py-3 truncate">
-                <h2 class="text-lg">توضیحات تکمیلی:</h2>
-                <p class="mr-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
+            <article class="more_info border-b-2 py-3">
+                <h2 class="text-xl font-lalezar md:text-2xl text-TitleColor">توضیحات تکمیلی:</h2>
+                <p class="mr-4 mt-1 truncate text-primeryColor">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
             </article>
-            <div class="seller py-3">
-                <div class="flex gap-3 bg-[#606c3854] hover:bg-[#606c387e] transition-all w-fit pl-7 pr-3 py-2 rounded-lg">
-                    <div class="overflow-hidden rounded-lg w-fit">
-                        <img src="./Static/img/user.webp" class="card_thumb scale-105 hover:scale-[1.15] hover:rotate-12 rounded-lg" alt="">
+
+            <div class="seller py-4">
+                <div class="flex items-center gap-3 bg-[#606c3854] hover:bg-[#606c387e] transition-all w-fit pl-7 pr-3 py-2 rounded-lg">
+                    <div class="overflow-hidden rounded-lg w-fit h-fit">
+                        <img src="./Static/img/user.webp" class="card_thumb scale-105 object-cover hover:scale-[1.15] hover:rotate-12 rounded-lg" alt="">
                     </div>
                     <div class="flex flex-col">
-                        <h1>علی سعادت</h1>
-                        <div class="point">
-                            <span>امتیاز فروشنده:</span>
-                            <span>۱۱۱۹۲</span>
+                        <h1 class="font-lalezar text-xl md:text-2xl text-TitleColor">علی سعادت</h1>
+                        <div class="point text-TitleColor text-base">
+                            <span class="">رتبه:</span>
+                            <span class="text-DstpColor font-semibold">معمولی</span>
                         </div>
                     </div>
                 </div>
@@ -126,122 +203,9 @@
         </div>
 
     </div>
-
-    <div class="custom-shape-divider-bottom-1651823564">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-        </svg>
-    </div>
-
+        
     <h1 class="text-2xl font-lalezar mr-16 relative border-r-4 pr-3 border-[#606c38]">شاید از این کتابا هم خوشت بیاد</h1>
 
-    <div class="flex justify-center">
-
-        <div class="carousel my-10 font-vazir flex flex-wrap gap-10 justify-center" dir="ltr">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./Static/img/kimiagar.jpg" alt="">
-                </div>
-                <div class="swiper-slide relative px-10">
-                    <div class="select-none flex flex-col absolute top-2 text-center">
-                        <h1 class="font-lalezar py-2 border-b-2 border-[#00000015]">کتاب کیمیاگر</h1>
-                        <div class="text-sm py-2 h-32 scrollbar overflow-y-scroll">
-                            <span>با گوسفندهایم در چراگاهی بودم. بچه‌ای سر رسید و با حیوانات شروع کرد به بازی… خیلی دوست ندارم هرکسی بیاید و با گوسفندهایم بازی کند، آن‌ها از آدم‌هایی که نمی‌شناسند می‌ترسند</span>
-                        </div>
-                        <div>
-                            <a href="" class="flex items-center gap-2 text-lg font-lalezar flex-row-reverse justify-center bg-[#5f6e77] rounded-lg py-2 mt-10">
-                                <span>مشاهده محصول</span>
-                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.441643 5.89359C-0.147214 6.53437 -0.147214 7.46563 0.441643 8.10641C2.25469 10.0793 6.54403 14 12 14C17.456 14 21.7453 10.0793 23.5584 8.10641C24.1472 7.46563 24.1472 6.53437 23.5584 5.89359C21.7453 3.92067 17.456 0 12 0C6.54403 0 2.25469 3.92067 0.441643 5.89359ZM12 2C7.68339 2 4.04578 5.05757 2.20582 7C4.04578 8.94243 7.68339 12 12 12C16.3166 12 19.9542 8.94243 21.7942 7C19.9542 5.05757 16.3166 2 12 2Z" fill="currentColor" fill-opacity="0.4"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7ZM11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./Static/img/Melat.jpg" alt="">
-                </div>
-                <div class="swiper-slide relative px-10">
-                    <div class="select-none flex flex-col absolute top-2 text-center">
-                        <h1 class="font-lalezar py-2 border-b-2 border-[#00000015]">کتاب کیمیاگر</h1>
-                        <div class="text-sm py-2 h-32 scrollbar overflow-y-scroll">
-                            <span>با گوسفندهایم در چراگاهی بودم. بچه‌ای سر رسید و با حیوانات شروع کرد به بازی… خیلی دوست ندارم هرکسی بیاید و با گوسفندهایم بازی کند، آن‌ها از آدم‌هایی که نمی‌شناسند می‌ترسند</span>
-                        </div>
-                        <div>
-                            <a href="" class="flex items-center gap-2 text-lg font-lalezar flex-row-reverse justify-center bg-[#5f6e77] rounded-lg py-2 mt-10">
-                                <span>مشاهده محصول</span>
-                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.441643 5.89359C-0.147214 6.53437 -0.147214 7.46563 0.441643 8.10641C2.25469 10.0793 6.54403 14 12 14C17.456 14 21.7453 10.0793 23.5584 8.10641C24.1472 7.46563 24.1472 6.53437 23.5584 5.89359C21.7453 3.92067 17.456 0 12 0C6.54403 0 2.25469 3.92067 0.441643 5.89359ZM12 2C7.68339 2 4.04578 5.05757 2.20582 7C4.04578 8.94243 7.68339 12 12 12C16.3166 12 19.9542 8.94243 21.7942 7C19.9542 5.05757 16.3166 2 12 2Z" fill="currentColor" fill-opacity="0.4"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7ZM11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./Static/img/Secret.jpg" alt="">
-                </div>
-                <div class="swiper-slide relative px-10">
-                    <div class="select-none flex flex-col absolute top-2 text-center">
-                        <h1 class="font-lalezar py-2 border-b-2 border-[#00000015]">کتاب کیمیاگر</h1>
-                        <div class="text-sm py-2 h-32 scrollbar overflow-y-scroll">
-                            <span>با گوسفندهایم در چراگاهی بودم. بچه‌ای سر رسید و با حیوانات شروع کرد به بازی… خیلی دوست ندارم هرکسی بیاید و با گوسفندهایم بازی کند، آن‌ها از آدم‌هایی که نمی‌شناسند می‌ترسند</span>
-                        </div>
-                        <div>
-                            <a href="" class="flex items-center gap-2 text-lg font-lalezar flex-row-reverse justify-center bg-[#5f6e77] rounded-lg py-2 mt-10">
-                                <span>مشاهده محصول</span>
-                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.441643 5.89359C-0.147214 6.53437 -0.147214 7.46563 0.441643 8.10641C2.25469 10.0793 6.54403 14 12 14C17.456 14 21.7453 10.0793 23.5584 8.10641C24.1472 7.46563 24.1472 6.53437 23.5584 5.89359C21.7453 3.92067 17.456 0 12 0C6.54403 0 2.25469 3.92067 0.441643 5.89359ZM12 2C7.68339 2 4.04578 5.05757 2.20582 7C4.04578 8.94243 7.68339 12 12 12C16.3166 12 19.9542 8.94243 21.7942 7C19.9542 5.05757 16.3166 2 12 2Z" fill="currentColor" fill-opacity="0.4"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7ZM11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./Static/img/کار-عمیق-19-وب330.jpg" alt="">
-                </div>
-                <div class="swiper-slide relative px-10">
-                    <div class="select-none flex flex-col absolute top-2 text-center">
-                        <h1 class="font-lalezar py-2 border-b-2 border-[#00000015]">کتاب کیمیاگر</h1>
-                        <div class="text-sm py-2 h-32 scrollbar overflow-y-scroll">
-                            <span>با گوسفندهایم در چراگاهی بودم. بچه‌ای سر رسید و با حیوانات شروع کرد به بازی… خیلی دوست ندارم هرکسی بیاید و با گوسفندهایم بازی کند، آن‌ها از آدم‌هایی که نمی‌شناسند می‌ترسند</span>
-                        </div>
-                        <div>
-                            <a href="" class="flex items-center gap-2 text-lg font-lalezar flex-row-reverse justify-center bg-[#5f6e77] rounded-lg py-2 mt-10">
-                                <span>مشاهده محصول</span>
-                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.441643 5.89359C-0.147214 6.53437 -0.147214 7.46563 0.441643 8.10641C2.25469 10.0793 6.54403 14 12 14C17.456 14 21.7453 10.0793 23.5584 8.10641C24.1472 7.46563 24.1472 6.53437 23.5584 5.89359C21.7453 3.92067 17.456 0 12 0C6.54403 0 2.25469 3.92067 0.441643 5.89359ZM12 2C7.68339 2 4.04578 5.05757 2.20582 7C4.04578 8.94243 7.68339 12 12 12C16.3166 12 19.9542 8.94243 21.7942 7C19.9542 5.05757 16.3166 2 12 2Z" fill="currentColor" fill-opacity="0.4"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7ZM11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-            
-        </div>
-
-    </div>
 
     <!-- <footer class="translate-y-[28rem] relative pb-10">
 
@@ -318,13 +282,6 @@
   
       </footer> -->
 
-    <script src="./Static/Js/swiper-bundle.min.js"></script>
-    <script>
-        let swiper = new Swiper(".mySwiper", {
-            effect: "cards",
-            grabCursor: true,
-        });
-    </script>
-
+    <script src="./Static/Js/Main.js"></script>
 </body>
 </html>
