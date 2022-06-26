@@ -13,6 +13,10 @@ body{
 }
 
 .product_system{
+    background: url(../img/low.png);
+    background-color: hsl(67,19%,78%);
+    background-size: 30rem;
+
     display: grid;
     grid-template-areas:
     "nav nav nav nav" 
@@ -50,10 +54,15 @@ body{
     -ms-transition: transform 300ms ease;
     -o-transition: transform 300ms ease;
     width: 100%;
-    max-width: 16rem;
+    max-width: 17rem;
     height: 100vh;
     position: sticky;
     top: 0;
+}
+
+.navbar_toggler_productList{
+    position: relative;
+    top: 25px;
 }
 
 .product_list{
