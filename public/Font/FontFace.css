@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
      font-family: 'Vazir';
      src: url('Font-file/Vazir-Light.eot'); /* IE9 Compat Modes */
@@ -20,3 +21,27 @@
      src: url("Font-file/Lalezar-Regular.ttf");
      font-style: normal;
 }
+=======
+@font-face {
+     font-family: 'Vazir';
+     src: url('Font-file/Vazir-Light.eot'); /* IE9 Compat Modes */
+     src: url('Font-file/Vazir-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('Font-file/Vazir-Medium.woff') format('woff'), /* Modern Browsers */
+          url('Font-file/Vazir-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+     font-weight: 500;
+}
+@font-face {
+     font-family: 'Vazir';
+     src: url('Font-file/Vazir-Bold.eot'); /* IE9 Compat Modes */
+     src: url('Font-file/Vazir-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('Font-file/Vazir-Bold.woff') format('woff'), /* Modern Browsers */
+          url('Font-file/Vazir-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+     font-weight: 700;
+}
+
+@font-face {
+     font-family: "Lalezar";
+     src: url("Font-file/Lalezar-Regular.ttf");
+     font-style: normal;
+}
+>>>>>>> d5d583120accec28d065047173dc3c468a98f62c
