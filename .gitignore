@@ -1,6 +1,5 @@
 node_modules
 desktop.ini
-package.json
 package-lock.json
+package.json
 postcss.config.js
-Src
